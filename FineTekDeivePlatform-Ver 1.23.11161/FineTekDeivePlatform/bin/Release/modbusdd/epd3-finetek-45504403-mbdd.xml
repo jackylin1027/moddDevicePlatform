@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FineTekModbusDD>
+  <Header>
+    <Form Height="600" Width="1000">
+    </Form>
+    <Identity firmware="A0001" hardware="Unknow" serial="Flow" sensor="EPD3">
+    </Identity>
+    <Communication interface="rs485">
+    </Communication>
+    <SpecificFunction save_eeprom_addr="4318" load_default_addr="4294" load_firmware_addr="4187">
+    </SpecificFunction>
+  </Header>
+  <UserInterface>
+    <Grid Name="gridMAIN" Margin="0,0,0,0">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <!-- 這邊開始為兄弟們要寫的程式碼 -->
+      <ScrollViewer Name="scollviewerMAIN" Grid.RowSpan="6" Grid.ColumnSpan="4" VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+          <GroupBox Header="System status" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="11" BorderThickness="2" Background="{Null}" FontWeight="Bold">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto">
+                </ColumnDefinition>
+                <ColumnDefinition Width="auto">
+                </ColumnDefinition>
+                <ColumnDefinition Width="auto">
+                </ColumnDefinition>
+                <ColumnDefinition Width="*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="*">
+                </ColumnDefinition>
+              </Grid.ColumnDefinitions>
+              <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                  <TextBlock Name="textblockCOM">COMPORT</TextBlock>
+                  <TextBlock Text=" / ">
+                  </TextBlock>
+                  <TextBlock Name="textblockSERIAL">五大變量</TextBlock>
+                  <TextBlock Text=" / ">
+                  </TextBlock>
+                  <TextBlock Name="textblockSENSOR">感測器</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                  <materialDesignPackIcon Kind="UserEdit" VerticalAlignment="Stretch" />
+                  <TextBox Name="textboxSENSOR_STATION" TextWrapping="Wrap" FontSize="15" FontWeight="Bold" Foreground="Blue" BorderThickness="0" Margin="10,0,0,0" MaxWidth="160">流量類</TextBox>
+                </StackPanel>
+                <Image Source="style/EPD.png" Stretch="UniformToFill" Height="Auto" Width="180">
+                </Image>
+              </StackPanel>
+              <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Orientation="Vertical" Margin="10,0,0,0">
+                <StackPanel Name="stackpanelREALTIME_CONTROL" Orientation="Horizontal" Height="50">
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                  <StackPanel Orientation="Vertical" Margin="0,0,20,0">
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Serial Number</TextBlock>
+                      <TextBox Name="editSERIAL_NUMBER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Circuit Temperature</TextBlock>
+                      <TextBox Name="editCIRCUIT_TEMPERATURE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                      <TextBlock VerticalAlignment="Center">°C</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Tube Status</TextBlock>
+                      <TextBox Name="editTUBE_STATUS" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Status Code</TextBlock>
+                      <TextBox Name="editSTATUS_CODE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Firmware Version</TextBlock>
+                      <TextBox Name="editFIRMWARE_VERSION" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                    </StackPanel>
+                  </StackPanel>
+                  <StackPanel Orientation="Vertical" Margin="0,0,0,10">
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Flow Rate</TextBlock>
+                      <TextBox Name="editFLOW_RATE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                      <TextBlock VerticalAlignment="Center">m3/h</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Forward Total</TextBlock>
+                      <TextBox Name="editFORWARD_TOTAL" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                      <TextBlock VerticalAlignment="Center">m3</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Reverse Total</TextBlock>
+                      <TextBox Name="editREVERSE_TOTAL" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                      <TextBlock VerticalAlignment="Center">m3</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Bi-direction Total</TextBlock>
+                      <TextBox Name="editBIDIR_TOTAL" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                      <TextBlock VerticalAlignment="Center">m3</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Loop Current</TextBlock>
+                      <TextBox Name="editLOOP_CURRENT" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                      <TextBlock VerticalAlignment="Center">mA</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">AI Current</TextBlock>
+                      <TextBox Name="editAI_CURRENT" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                      <TextBlock VerticalAlignment="Center">mA</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Liquid Resistance</TextBlock>
+                      <TextBox Name="editLIQUID_RESISTANCE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                      <TextBlock VerticalAlignment="Center">kΩ</TextBlock>
+                    </StackPanel>
+                  </StackPanel>
+                  <GroupBox Name="groupboxREALTIME_CHART" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="10,0,0,10" Width="360">
+                  </GroupBox>
+                </StackPanel>
+              </StackPanel>
+            </Grid>
+          </GroupBox>
+          <StackPanel Orientation="Horizontal">
+            <GroupBox Header="裝置參數" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="10" BorderThickness="2">
+              <Grid>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="auto">
+                  </ColumnDefinition>
+                  <ColumnDefinition Width="auto">
+                  </ColumnDefinition>
+                  <ColumnDefinition Width="*">
+                  </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Name="stackpanelSETTING_CONTROL" Grid.Column="2" VerticalAlignment="Top" Height="50" Orientation="Horizontal">
+                </StackPanel>
+                <StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Tag Number</TextBlock>
+                    <TextBox Name="editTAG_NUMBER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </TextBox>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Measure Type</TextBlock>
+                    <ComboBox Name="comboboxMEASURE_TYPE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </ComboBox>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Flow Unit</TextBlock>
+                    <ComboBox Name="comboboxFLOW_UNIT" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </ComboBox>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Flow Span</TextBlock>
+                    <TextBox Name="editFLOW_SPAN" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </TextBox>
+                    <TextBlock VerticalAlignment="Center" Width="80">m3/h</TextBlock>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Direction</TextBlock>
+                    <ComboBox Name="comboboxDIRECTION" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </ComboBox>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Total Unit</TextBlock>
+                    <ComboBox Name="comboboxTOTAL_UNIT" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </ComboBox>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Total Mode</TextBlock>
+                    <ComboBox Name="comboboxTOTAL_MODE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </ComboBox>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Total Reset</TextBlock>
+                    <TextBox Name="editTOTAL_RESET" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </TextBox>
+                  </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Column="1">
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Zero Adjustment</TextBlock>
+                    <TextBox Name="editZERO_ADJUSTMENT" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </TextBox>
+                    <TextBlock VerticalAlignment="Center" Width="80">m/s</TextBlock>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">K-Factor</TextBlock>
+                    <TextBox Name="editK_FACTOR" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </TextBox>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Density</TextBlock>
+                    <TextBox Name="editDENSITY" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </TextBox>
+                    <TextBlock VerticalAlignment="Center" Width="80">g/m3</TextBlock>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Low Flow Cutoff</TextBlock>
+                    <TextBox Name="editLOW_FLOW_CUTOFF" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </TextBox>
+                    <TextBlock VerticalAlignment="Center" Width="80">%</TextBlock>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Forward Init</TextBlock>
+                    <TextBox Name="editFORWARD_INIT" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </TextBox>
+                    <TextBlock VerticalAlignment="Center" Width="80">m3</TextBlock>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Reverse Init</TextBlock>
+                    <TextBox Name="editREVERSE_INIT" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </TextBox>
+                    <TextBlock VerticalAlignment="Center" Width="80">m3</TextBlock>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Width="80">Auto Zero</TextBlock>
+                    <TextBox Name="editAUTO_ZERO" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                    </TextBox>
+                  </StackPanel>
+                </StackPanel>
+              </Grid>
+            </GroupBox>
+          </StackPanel>
+          <GroupBox Name="groupboxHISTORY" Header="歷史資料" Height="300" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="10" BorderThickness="2">
+          </GroupBox>
+        </StackPanel>
+      </ScrollViewer>
+    </Grid>
+  </UserInterface>
+  <UIscript>
+    <ComboboxItemSource Id="comboboxMEASURE_TYPE" Type="string" Items="water,none" ItemsMapping="0,1">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxFLOW_UNIT" Type="string" Items="L/m,L/h,m3/m,m3/h,gal/m,gal/h,kg/m,kg/h,T/m,T/h,m3/d,L/s,m3/s,gal/s,kg/s,Ton/s" ItemsMapping="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxDIRECTION" Type="string" Items="Forward,Reverse" ItemsMapping="0,1">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxTOTAL_UNIT" Type="string" Items="Liter,gal,m3,kg,Ton" ItemsMapping="0,1,2,3,4">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxTOTAL_MODE" Type="string" Items="Forward,Reverse,Biderection" ItemsMapping="0,1,2">
+    </ComboboxItemSource>
+    <EditContentMapping Id="editTUBE_STATUS" Type="string" Content="正常,空管" ContentMapping="0,1">
+    </EditContentMapping>
+  </UIscript>
+  <exFunction>
+    <!-- event list  cicombobox selectindex_change, tttextbox text_change -->
+  </exFunction>
+  <!--Length 請使用物理單位量, ex Float32 = 1, Float64 = 1, int/uint32 = 1, int/uint16 = 1,-->
+  <CommunicationRoutine>
+    <Sequence Address="4112" Length="65" Attribute="r">
+    </Sequence>
+    <Sequence Address="4181" Length="13" Attribute="rw">
+    </Sequence>
+    <Sequence Address="4208" Length="25" Attribute="rw">
+    </Sequence>
+    <Sequence Address="4318" Length="17" Attribute="rw">
+    </Sequence>    
+  </CommunicationRoutine>
+  <ModbusParameter>
+    <Cell RelateName="editFORWARD_TOTAL" Address="4112" DataType="FLOAT64" />
+    <Cell RelateName="editREVERSE_TOTAL" Address="4116" DataType="FLOAT64" />
+    <Cell RelateName="editBIDIR_TOTAL" Address="4120" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4124" DataType="FLOAT64" />
+    <Cell RelateName="editFLOW_RATE" Address="4128" DataType="FLOAT64" />
+    <Cell RelateName="editLOOP_CURRENT" Address="4132" DataType="FLOAT32" />
+    <Cell RelateName="editAI_CURRENT" Address="4134" DataType="FLOAT32" />
+    <Cell RelateName="editLIQUID_RESISTANCE" Address="4136" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4138" DataType="UINT32" />
+    <Cell RelateName="" Address="4140" DataType="UINT32" />
+    <Cell RelateName="" Address="4142" DataType="UINT32" />
+    <Cell RelateName="" Address="4144" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4146" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4148" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4150" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4152" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4154" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4156" DataType="UINT16" />
+    <Cell RelateName="" Address="4157" DataType="UINT16" />
+    <Cell RelateName="" Address="4158" DataType="UINT16" />
+    <Cell RelateName="" Address="4159" DataType="UINT16" />
+    <Cell RelateName="editCIRCUIT_TEMPERATURE" Address="4160" DataType="FLOAT32" />
+    <Cell RelateName="editTUBE_STATUS" Address="4162" DataType="UINT16" />
+    <Cell RelateName="editSTATUS_CODE" Address="4163" DataType="UINT32" />
+    <Cell RelateName="" Address="4165" DataType="UINT16" />
+    <Cell RelateName="" Address="4166" DataType="UINT16" />
+    <Cell RelateName="" Address="4167" DataType="UINT16" />
+    <Cell RelateName="" Address="4168" DataType="UINT16" />
+    <Cell RelateName="" Address="4169" DataType="UINT16" />
+    <Cell RelateName="" Address="4170" DataType="UINT16" />
+    <Cell RelateName="" Address="4171" DataType="UINT16" />
+    <Cell RelateName="" Address="4172" DataType="UINT16" />
+    <Cell RelateName="" Address="4173" DataType="UINT16" />
+    <Cell RelateName="" Address="4174" DataType="UINT16" />
+    <Cell RelateName="" Address="4175" DataType="UINT16" />
+    <Cell RelateName="editFIRMWARE_VERSION" Address="4176" DataType="UINT16" />
+    <Cell RelateName="editTAG_NUMBER" Address="4181" DataType="UINT16" />
+    <Cell RelateName="comboboxMEASURE_TYPE" Address="4182" DataType="UINT16" />
+    <Cell RelateName="" Address="4183" DataType="FLOAT32" />
+    <Cell RelateName="comboboxFLOW_UNIT" Address="4185" DataType="UINT16" />
+    <Cell RelateName="editFLOW_SPAN" Address="4186" DataType="FLOAT64" />
+    <Cell RelateName="comboboxDIRECTION" Address="4190" DataType="UINT16" />
+    <Cell RelateName="comboboxTOTAL_UNIT" Address="4191" DataType="UINT16" />
+    <Cell RelateName="comboboxTOTAL_MODE" Address="4192" DataType="UINT16" />
+    <Cell RelateName="editTOTAL_RESET" Address="4193" DataType="UINT16" />
+    <Cell RelateName="editZERO_ADJUSTMENT" Address="4208" DataType="FLOAT64" />
+    <Cell RelateName="editK_FACTOR" Address="4212" DataType="FLOAT64" />
+    <Cell RelateName="editDENSITY" Address="4216" DataType="FLOAT64" />
+    <Cell RelateName="editLOW_FLOW_CUTOFF" Address="4220" DataType="FLOAT64" />
+    <Cell RelateName="editFORWARD_INIT" Address="4224" DataType="FLOAT64" />
+    <Cell RelateName="editREVERSE_INIT" Address="4228" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4232" DataType="UINT16" />
+    <Cell RelateName="" Address="4318" DataType="UINT16" />
+    <Cell RelateName="" Address="4319" DataType="UINT16" />
+    <Cell RelateName="" Address="4320" DataType="UINT16" />
+    <Cell RelateName="" Address="4321" DataType="UINT16" />
+    <Cell RelateName="" Address="4322" DataType="UINT32" />
+    <Cell RelateName="" Address="4324" DataType="UINT16" />
+    <Cell RelateName="" Address="4325" DataType="UINT16" />
+    <Cell RelateName="" Address="4326" DataType="UINT16" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4327" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4328" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4329" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4330" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4331" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4332" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4333" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4334" DataType="INT16" StringLen="8" />
+  </ModbusParameter>
+  <ChartDefination>
+    <entity RelateName="editFLOW_RATE" unit="瞬間值lpm">
+    </entity>
+    <interval calculate_targer="modbus_interval" number="2">
+    </interval>
+  </ChartDefination>
+  <SqlRoutine>
+    <displaylitem RelateName="editFLOW_RATE" key="display_value" />
+    <historysqlitem RelateName="editFORWARD_TOTAL" key="f_accu_flow" type="object" />
+    <historysqlitem RelateName="editREVERSE_TOTAL" key="r_accu_flow" type="object" />
+    <historysqlitem RelateName="editBIDIR_TOTAL" key="b_accu_flow" type="object" />
+    <historysqlitem RelateName="editFLOW_RATE" key="flow_rate" type="object" />
+    <historysqlitem RelateName="editSERIAL_NUMBER" key="sn" type="string" />
+    <historysqlitem RelateName="editFIRMWARE_VERSION" key="firmware" type="string" />
+  </SqlRoutine>
+</FineTekModbusDD>

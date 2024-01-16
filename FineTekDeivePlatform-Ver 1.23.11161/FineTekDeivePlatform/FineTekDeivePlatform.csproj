@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BA92996-97C2-4EF6-B83A-E4F13FBDDE1A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FineTekDeivePlatform</RootNamespace>
+    <AssemblyName>FineTek Deivce Platform</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>調製軟件icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.2.0.2\lib\net45\CommonServiceLocator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DateTimePicker.UserControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DateTimePicker.UserControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Dragablz, Version=0.0.3.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dragablz.0.0.3.234\lib\net45\Dragablz.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Finetek_FPAS_UtilityTool, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Release\Finetek_FPAS_UtilityTool.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.4.1.0, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Extras.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LedDigital">
+      <HintPath>..\LedDigital\bin\Debug\LedDigital.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LiveCharts.Geared">
+      <HintPath>..\packages\LiveCharts.Geared.1.2.9\lib\net45\LiveCharts.Geared.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.2.0.325, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.2.0\lib\net45\MaterialDesignColors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.6.0.325, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.6.0\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.8.1.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="winform_test, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\winform_test.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="additional\exFunctionEPH.cs" />
+    <Compile Include="additional\exFunctionEPH0019.cs" />
+    <Compile Include="component\fk_advancedchart.xaml.cs">
+      <DependentUpon>fk_advancedchart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="component\fk_basiclinechart.xaml.cs" />
+    <Compile Include="component\fk_button.xaml.cs" />
+    <Compile Include="component\fk_combobox.xaml.cs" />
+    <Compile Include="component\fk_customlabel.xaml.cs" />
+    <Compile Include="component\fk_edit.xaml.cs" />
+    <Compile Include="component\fk_imagebutton.xaml.cs" />
+    <Compile Include="component\fk_labeledit.xaml.cs" />
+    <Compile Include="component\fk_multilabel.xaml.cs" />
+    <Compile Include="component\fk_slider.xaml.cs" />
+    <Compile Include="component\fk_theme.xaml.cs" />
+    <Compile Include="component\fk_theme_fse.xaml.cs" />
+    <Compile Include="component\homepage\fk_five_variation_chart.xaml.cs">
+      <DependentUpon>fk_five_variation_chart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="component\specialmodel\fk_epht_billboard.xaml.cs" />
+    <Compile Include="Helpers\ColorHelper.cs" />
+    <Compile Include="HistoryChart.xaml.cs">
+      <DependentUpon>HistoryChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ISensor.cs" />
+    <Compile Include="lib\fkMysqlCommand.cs" />
+    <Compile Include="Models\EphProduct.cs" />
+    <Compile Include="PaltformIndentity.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RealTimeChart.xaml.cs">
+      <DependentUpon>RealTimeChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\EphProductViewModel.cs" />
+    <Compile Include="ViewModel\LedDigitalViewModel.cs" />
+    <Compile Include="View\EphProductView.xaml.cs">
+      <DependentUpon>EphProductView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LedDigitalView.xaml.cs">
+      <DependentUpon>LedDigitalView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XMLparser.cs" />
+    <Page Include="component\fk_advancedchart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="component\fk_basiclinechart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="component\fk_button.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="component\fk_combobox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="component\fk_customlabel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="component\fk_edit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="component\fk_imagebutton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="component\fk_labeledit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="component\fk_multilabel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="component\fk_slider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="component\fk_theme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="component\fk_theme_fse.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="component\homepage\fk_five_variation_chart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="component\specialmodel\fk_epht_billboard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HistoryChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="address_zone.cs" />
+    <Compile Include="alogrithm.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="define.cs" />
+    <Compile Include="fn.cs" />
+    <Compile Include="lib\modbus.cs" />
+    <Compile Include="lib\modbus_cell.cs" />
+    <Compile Include="lib\serial_app.cs" />
+    <Compile Include="lib\setupIni.cs" />
+    <Compile Include="lib\write_obj.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="RealTimeChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EphProductView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LedDigitalView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="modbus_table.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\1660795253024.jpg" />
+    <Resource Include="style\1660795254594.jpg" />
+    <Resource Include="style\1660795254633.jpg" />
+    <Resource Include="style\1660795255221.jpg" />
+    <Resource Include="style\1660795255493.jpg" />
+    <Resource Include="style\DSC_3450.jpg" />
+    <Resource Include="style\DSC_3450_0.jpg" />
+    <Resource Include="style\DSC_3451.jpg" />
+    <Resource Include="style\EPU_ProductImage.png" />
+    <Resource Include="style\logo.png" />
+    <Resource Include="style\logo_offical.png" />
+    <Resource Include="style\logo_offical_little.png" />
+    <Resource Include="style\logo_red.png" />
+    <Resource Include="style\logo_transparent.png" />
+    <Resource Include="style\theme1.png" />
+    <Resource Include="style\theme2.png" />
+    <Resource Include="style\theme2_logo.png" />
+    <Resource Include="style\theme3.png" />
+    <Resource Include="style\theme4.png" />
+    <Resource Include="style\theme5.png" />
+    <Resource Include="style\theme5_1.png" />
+    <Resource Include="style\theme6.png" />
+    <Resource Include="style\theme7.png" />
+    <Resource Include="style\theme8.png" />
+    <Resource Include="style\theme9-1.png" />
+    <Resource Include="style\theme9.png" />
+    <Resource Include="style\調製軟件icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="調製軟件icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\EPD_5F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\ice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\Fine-tek_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\WATER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\water_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\fine-tek_logo_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\level_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\TANK_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\TANK_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\TANK_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\fk_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\levellogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\tank_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\tank_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\tank_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\water_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\water_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\water_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\water_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\finetek-SIS100-pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\finetek-EPH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\finetek-EPH0019.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\EPD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="style\EPU.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

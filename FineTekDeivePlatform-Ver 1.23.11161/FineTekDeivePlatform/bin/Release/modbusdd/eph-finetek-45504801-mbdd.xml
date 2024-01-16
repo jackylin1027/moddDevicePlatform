@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FineTekModbusDD>
+  <Header>
+    <Form Height="600" Width="1000">
+    </Form>
+    <Identity firmware="A1041" hardware="Unknow" serial="Flow" sensor="EPH">
+    </Identity>
+    <Communication interface="rs485">
+    </Communication>
+    <SpecificFunction save_eeprom_addr="4186" load_default_addr="4185" load_firmware_addr="4187">
+    </SpecificFunction>
+  </Header>
+  <UserInterface>
+    <Grid Name="gridMAIN" Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- 這邊開始為兄弟們要寫的程式碼 -->
+        <ScrollViewer Name="scollviewerMAIN"   VerticalScrollBarVisibility="Auto" Grid.RowSpan="6" Grid.ColumnSpan="4">
+            <StackPanel Orientation="Vertical" >
+            
+                <GroupBox Header="Real Time State" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" MaxHeight="250"
+						        UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="11" BorderThickness="2" Background="{Null}" FontWeight="Bold" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Vertical" >
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <TextBlock  Name="textblockCOM">COMPORT</TextBlock>
+                            <TextBlock Text=" / "></TextBlock>
+                            <TextBlock  Name="textblockSERIAL">五大變量</TextBlock>
+                            <TextBlock  Text=" / "></TextBlock>
+                            <TextBlock  Name="textblockSENSOR">感測器</TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesignPackIcon Kind="UserEdit" VerticalAlignment="Stretch" />
+                            <TextBox Name="textboxSENSOR_STATION" TextWrapping="Wrap" FontSize="15" FontWeight="Bold" Foreground="Blue" BorderThickness="0" Margin="10,0,0,0" MaxWidth="160">流量類</TextBox>
+                        </StackPanel>
+                        <Image Source="style/finetek-EPH.png" Stretch="UniformToFill" Height="Auto" Width="180" ></Image>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Orientation="Vertical" Margin="10,0,0,0">
+                        <StackPanel Name="stackpanelREALTIME_CONTROL"  Orientation="Horizontal" Height="50">
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical" Margin="0,0,20,0">
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="80">總雙向累積流量</TextBlock>
+                                    <TextBox Name="editTOTAL_ACCUMALUTION" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >m³</TextBlock>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="80">韌體版本</TextBlock>
+                                    <TextBox Name="editFIRMWARE_VERSION" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="80">一圈所需時間</TextBlock>
+                                    <TextBox Name="editREAL_1CYCLE_TIME" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="80">Delta count</TextBlock>
+                                    <TextBox Name="editDELTA_CNT" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="80">目前使用KQ</TextBlock>
+                                    <TextBox Name="editKQ_STATE" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                </StackPanel>
+                            </StackPanel>
+                            <StackPanel  Orientation="Vertical" Margin="0,0,30,0">
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="40">Q1 K值</TextBlock>
+                                    <TextBox Name="editKQ1_VALUE_R" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >正</TextBlock>
+                                    <TextBox Name="editFORWARE_TOTALCNT_Q1" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >負</TextBlock>
+                                    <TextBox Name="editREVERSE_TOTALCNT_Q1" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="40">Q2 K值</TextBlock>
+                                    <TextBox Name="editKQ2_VALUE_R" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >正</TextBlock>
+                                    <TextBox Name="editFORWARE_TOTALCNT_Q2" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >負</TextBlock>
+                                    <TextBox Name="editREVERSE_TOTALCNT_Q2" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="40">Q3 K值</TextBlock>
+                                    <TextBox Name="editKQ3_VALUE_R" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >正</TextBlock>
+                                    <TextBox Name="editFORWARE_TOTALCNT_Q3" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >負</TextBlock>
+                                    <TextBox Name="editREVERSE_TOTALCNT_Q3" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="40">Q4 K值</TextBlock>
+                                    <TextBox Name="editKQ4_VALUE_R" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >正</TextBlock>
+                                    <TextBox Name="editFORWARE_TOTALCNT_Q4" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >負</TextBlock>
+                                    <TextBox Name="editREVERSE_TOTALCNT_Q4" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="40">Q5 K值</TextBlock>
+                                    <TextBox Name="editKQ5_VALUE_R" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >正</TextBlock>
+                                    <TextBox Name="editFORWARE_TOTALCNT_Q5" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >負</TextBlock>
+                                    <TextBox Name="editREVERSE_TOTALCNT_Q5" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="40">Q6 K值</TextBlock>
+                                    <TextBox Name="editKQ6_VALUE_R" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >正</TextBlock>
+                                    <TextBox Name="editFORWARE_TOTALCNT_Q6" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >負</TextBlock>
+                                    <TextBox Name="editREVERSE_TOTALCNT_Q6" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="40">Q7 K值</TextBlock>
+                                    <TextBox Name="editKQ7_VALUE_R" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >正</TextBlock>
+                                    <TextBox Name="editFORWARE_TOTALCNT_Q7" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" >負</TextBlock>
+                                    <TextBox Name="editREVERSE_TOTALCNT_Q7" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                        </StackPanel>
+                    </StackPanel>
+                    <GroupBox Name="groupboxREALTIME_CHART" Grid.Column="3" Grid.ColumnSpan="2" Style="{StaticResource GroupBoxStyleEmpty1}" Width="300">
+                    </GroupBox>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Header="裝置參數" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" 
+						    UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="10" BorderThickness="2" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Name="stackpanelSETTING_CONTROL" Grid.Column="2" VerticalAlignment="Top" Height="50" Orientation="Horizontal"></StackPanel>
+                    <StackPanel Orientation="Vertical" >
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center"  Width="100">Modbus ID</TextBlock>
+                            <TextBox Name="editMODBUS_ID" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" Margin="5,0,5,0" MinWidth="80">客戶</TextBlock>
+                                <ComboBox Name="comboboxCUSTOMER" Margin="5,0,10,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center"></ComboBox>
+                            </StackPanel>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" Margin="5,0,5,0" MinWidth="80">年度</TextBlock>
+                                <ComboBox Name="comboboxYEARLY" Margin="5,0,10,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center"></ComboBox>
+                            </StackPanel>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" Margin="5,0,5,0" MinWidth="80">口徑【DN】</TextBlock>
+                                <ComboBox Name="comboboxCALIBER" Margin="5,0,10,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center"></ComboBox>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="100">流水碼</TextBlock>
+                            <TextBox Name="editSERIES_CODE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="100">錶號【共16碼】</TextBlock>
+                            <TextBox Name="editMETER_ID" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="100">加密版本</TextBlock>
+                            <ComboBox Name="comboboxENCRYPTION" Margin="5,0,0,5" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100"></ComboBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Name="buttonDEFAULT" VerticalAlignment="Center" MinWidth="80" Margin="50,0,10,0" Padding="3" Height="24">恢復預設值</Button>
+                            <Button Name="buttonSOFTWARE_RESET" VerticalAlignment="Center" MinWidth="80" Padding="3" Height="24">水錶重開機</Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" MinWidth="100" Foreground="Red" Margin="15,0,0,0"  TextDecorations="Underline">切換通訊後，Modbus將會斷線，參數請確認設定完畢</TextBlock>
+                                <Button Name="buttonCONMMULICATION_MODE" VerticalAlignment="Center" Margin="30,0,0,0"  MinWidth="80" Padding="3" Height="24">切換加密通訊模式</Button>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical" Grid.Column="1" Margin="0,10,0,0" >
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="90" Margin="110,0,0,0">高低速分界CNT</TextBlock>
+                            <TextBox Name="editCALIBRATION_DIVIDE_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q1 K值</TextBlock>
+                            <TextBox Name="editKQ1_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="90" Margin="5,0,0,0">Q1【秒/圈】±0.25</TextBlock>
+                            <TextBox Name="editQ1_1CYCLE_TIME" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q2 K值</TextBlock>
+                            <TextBox Name="editKQ2_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="90" Margin="5,0,0,0">Q2【秒/圈】±0.25</TextBlock>
+                            <TextBox Name="editQ2_1CYCLE_TIME" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q3 K值</TextBlock>
+                            <TextBox Name="editKQ3_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="90" Margin="5,0,0,0">Q3【秒/圈】±0.25</TextBlock>
+                            <TextBox Name="editQ3_1CYCLE_TIME" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q4 K值</TextBlock>
+                            <TextBox Name="editKQ4_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="60" Margin="5,0,0,0">Q4【秒/圈】</TextBlock>
+                            <TextBox Name="editQ4_DELTACNT_LOWER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="10" Margin="5,0,0,0">~</TextBlock>
+                            <TextBox Name="editQ4_DELTACNT_UPPER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q5 K值</TextBlock>
+                            <TextBox Name="editKQ5_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="60" Margin="5,0,0,0">Q5【秒/圈】</TextBlock>
+                            <TextBox Name="editQ5_DELTACNT_LOWER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="10" Margin="5,0,0,0">~</TextBlock>
+                            <TextBox Name="editQ5_DELTACNT_UPPER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q6 K值</TextBlock>
+                            <TextBox Name="editKQ6_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="60" Margin="5,0,0,0">Q6【秒/圈】</TextBlock>
+                            <TextBox Name="editQ6_DELTACNT_LOWER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="10" Margin="5,0,0,0">~</TextBlock>
+                            <TextBox Name="editQ6_DELTACNT_UPPER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q7 K值</TextBlock>
+                            <TextBox Name="editKQ7_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="60" Margin="5,0,0,0">Q7【秒/圈】</TextBlock>
+                            <TextBox Name="editQ7_DELTACNT_LOWER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="10" Margin="5,0,0,0">~</TextBlock>
+                            <TextBox Name="editQ7_DELTACNT_UPPER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Column="2" >
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+            <GroupBox Name="groupboxHISTORY" Header="歷史資料" Height="300" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" 
+						    UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="10" BorderThickness="2" >
+                
+            </GroupBox>
+        </StackPanel>
+        </ScrollViewer>
+    </Grid>
+  </UserInterface>
+  <UIscript>
+    <ComboboxItemSource Id="comboboxCUSTOMER" Type="string" Items="成品庫存,北水,台水,中華電信,桓達科技" ItemsMapping="0,1,2,3,4">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxYEARLY" Type="string" Items="112,113,114,115,116,117,118,119,120,121,122" ItemsMapping="0,1,2,3,4,5,6,7,8,9,10">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxCALIBER" Type="string" Items="13,20,25,40,50" ItemsMapping="13,20,25,40,50">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxENCRYPTION" Type="string" Items="桓達科技,中華電信" ItemsMapping="0,1">
+    </ComboboxItemSource>
+  </UIscript>
+  <exFunction>
+  	<!-- event list  cicombobox selectindex_change, tttextbox text_change -->
+  	<FuncInfo name="MergeContent" response="editMETER_ID" argu="comboboxCUSTOMER,comboboxYEARLY,comboboxCALIBER,editSERIES_CODE" event="ci,ci,ci,tt"></FuncInfo>
+  	<FuncInfo name="SelectionContent" response="comboboxENCRYPTION" argu="comboboxCUSTOMER,comboboxENCRYPTION" event="ci,null"></FuncInfo>
+  	<!-- 千萬不能換行，字串會有 \t跟\n\r -->
+  	<FuncInfo name="LoadTempalete" response="null" argu="comboboxCALIBER,editCALIBRATION_DIVIDE_VALUE,editKQ1_VALUE,editKQ2_VALUE,editKQ3_VALUE,editKQ4_VALUE,editKQ5_VALUE,editKQ6_VALUE,editKQ7_VALUE,editQ1_1CYCLE_TIME,editQ2_1CYCLE_TIME,editQ3_1CYCLE_TIME,editQ4_DELTACNT_LOWER,editQ5_DELTACNT_LOWER,editQ6_DELTACNT_LOWER,editQ7_DELTACNT_LOWER,editQ4_DELTACNT_UPPER ,editQ5_DELTACNT_UPPER ,editQ6_DELTACNT_UPPER ,editQ7_DELTACNT_UPPER"		 		
+  		event="ci,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null"></FuncInfo>
+	</exFunction>
+  <!--Length 請使用物理單位量, ex Float32 = 1, Float64 = 1, int/uint32 = 1, int/uint16 = 1,-->
+  <CommunicationRoutine>
+    <Sequence Address="4128" Length="56" Attribute="r">
+    </Sequence>
+    <Sequence Address="4184" Length="46" Attribute="rw">
+    </Sequence>
+  </CommunicationRoutine>
+  <ModbusParameter>
+    <Cell RelateName="" Address="4128" DataType="UINT16" />
+    <Cell RelateName="editFIRMWARE_VERSION" Address="4129" DataType="UINT16" />
+    <Cell RelateName="" Address="4130" DataType="UINT16" />
+    <Cell RelateName="" Address="4131" DataType="UINT16" />
+    <Cell RelateName="" Address="4132" DataType="UINT16" />
+    <Cell RelateName="" Address="4133" DataType="UINT16" />
+    <Cell RelateName="" Address="4134" DataType="UINT16" />
+    <Cell RelateName="editTOTAL_ACCUMALUTION" Address="4135" DataType="FLOAT64" />
+    <Cell RelateName="editFORWARE_TOTALCNT_Q6" Address="4139" DataType="UINT32" />
+    <Cell RelateName="editFORWARE_TOTALCNT_Q3" Address="4141" DataType="UINT32" />
+    <Cell RelateName="editREVERSE_TOTALCNT_Q3" Address="4143" DataType="UINT32" />
+    <Cell RelateName="" Address="4145" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4149" DataType="FLOAT64" />
+    <Cell RelateName="editREVERSE_TOTALCNT_Q6" Address="4153" DataType="UINT32" />
+    <Cell RelateName="" Address="4155" DataType="UINT32" />
+    <Cell RelateName="" Address="4157" DataType="UINT16" />
+    <Cell RelateName="" Address="4158" DataType="UINT16" />
+    <Cell RelateName="" Address="4159" DataType="UINT16" />
+    <Cell RelateName="editREAL_1CYCLE_TIME" Address="4160" DataType="FLOAT32" />
+    <Cell RelateName="editFORWARE_TOTALCNT_Q1" Address="4162" DataType="UINT32" />
+    <Cell RelateName="editREVERSE_TOTALCNT_Q1" Address="4164" DataType="UINT32" />
+    <Cell RelateName="editFORWARE_TOTALCNT_Q2" Address="4166" DataType="UINT32" />
+    <Cell RelateName="editREVERSE_TOTALCNT_Q2" Address="4168" DataType="UINT32" />
+    <Cell RelateName="editFORWARE_TOTALCNT_Q4" Address="4170" DataType="UINT32" />
+    <Cell RelateName="editREVERSE_TOTALCNT_Q4" Address="4172" DataType="UINT32" />
+    <Cell RelateName="editFORWARE_TOTALCNT_Q5" Address="4174" DataType="UINT32" />
+    <Cell RelateName="editREVERSE_TOTALCNT_Q5" Address="4176" DataType="UINT32" />
+    <Cell RelateName="editFORWARE_TOTALCNT_Q7" Address="4178" DataType="UINT32" />
+    <Cell RelateName="editREVERSE_TOTALCNT_Q7" Address="4180" DataType="UINT32" />
+    <Cell RelateName="editDELTA_CNT" Address="4182" DataType="UINT16" />
+    <Cell RelateName="editKQ_STATE" Address="4183" DataType="UINT16" />
+    <Cell RelateName="" Address="4184" DataType="UINT16" />
+    <Cell RelateName="" Address="4185" DataType="UINT16" />
+    <Cell RelateName="" Address="4186" DataType="UINT16" />
+    <Cell RelateName="" Address="4187" DataType="UINT16" />
+    <Cell RelateName="comboboxCALIBER" Address="4188" DataType="UINT16" />
+    <Cell RelateName="comboboxENCRYPTION" Address="4189" DataType="UINT16" />
+    <Cell RelateName="" Address="4190" DataType="UINT16" />
+    <Cell RelateName="" Address="4191" DataType="UINT16" />
+    <Cell RelateName="editMODBUS_ID" Address="4192" DataType="UINT16" />
+    <Cell RelateName="editKQ6_VALUE" SecondRelateName="editKQ6_VALUE_R" Address="4193" DataType="FLOAT32" />
+    <Cell RelateName="editMETER_ID" Address="4195" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editMETER_ID" Address="4196" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editMETER_ID" Address="4197" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editMETER_ID" Address="4198" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editMETER_ID" Address="4199" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editMETER_ID" Address="4200" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editMETER_ID" Address="4201" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editMETER_ID" Address="4202" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editKQ3_VALUE" SecondRelateName="editKQ3_VALUE_R" Address="4203" DataType="FLOAT32" />
+    <Cell RelateName="editCALIBRATION_DIVIDE_VALUE" Address="4205" DataType="UINT16" />
+    <Cell RelateName="editKQ1_VALUE" SecondRelateName="editKQ1_VALUE_R" Address="4206" DataType="FLOAT32" />
+    <Cell RelateName="editKQ2_VALUE" SecondRelateName="editKQ2_VALUE_R" Address="4208" DataType="FLOAT32" />
+    <Cell RelateName="editKQ4_VALUE" SecondRelateName="editKQ4_VALUE_R" Address="4210" DataType="FLOAT32" />
+    <Cell RelateName="editKQ5_VALUE" SecondRelateName="editKQ5_VALUE_R" Address="4212" DataType="FLOAT32" />
+    <Cell RelateName="editKQ7_VALUE" SecondRelateName="editKQ7_VALUE_R" Address="4214" DataType="FLOAT32" />
+    <Cell RelateName="editQ1_1CYCLE_TIME" Address="4216" DataType="FLOAT32" />
+    <Cell RelateName="editQ2_1CYCLE_TIME" Address="4218" DataType="FLOAT32" />
+    <Cell RelateName="editQ3_1CYCLE_TIME" Address="4220" DataType="FLOAT32" />
+    <Cell RelateName="editQ4_DELTACNT_LOWER" Address="4222" DataType="UINT16" />
+    <Cell RelateName="editQ4_DELTACNT_UPPER" Address="4223" DataType="UINT16" />
+    <Cell RelateName="editQ5_DELTACNT_LOWER" Address="4224" DataType="UINT16" />
+    <Cell RelateName="editQ5_DELTACNT_UPPER" Address="4225" DataType="UINT16" />
+    <Cell RelateName="editQ6_DELTACNT_LOWER" Address="4226" DataType="UINT16" />
+    <Cell RelateName="editQ6_DELTACNT_UPPER" Address="4227" DataType="UINT16" />
+    <Cell RelateName="editQ7_DELTACNT_LOWER" Address="4228" DataType="UINT16" />
+    <Cell RelateName="editQ7_DELTACNT_UPPER" Address="4229" DataType="UINT16" />
+  </ModbusParameter>
+  <ChartDefination>
+    <entity RelateName="editTOTAL_ACCUMALUTION" unit="總積算值">
+    </entity>
+    <interval calculate_targer="modbus_interval" number="2">
+    </interval>
+  </ChartDefination>
+  <SqlRoutine>
+    <displaylitem RelateName="editTOTAL_ACCUMALUTION" key="display_value" />
+    <historysqlitem RelateName="editMETER_ID" key="sn" type="string" />
+    <historysqlitem RelateName="editFIRMWARE_VERSION" key="firmware" type="string" />
+    <historysqlitem RelateName="editTOTAL_ACCUMALUTION" key="b_accu_flow" type="object" />
+  </SqlRoutine>
+</FineTekModbusDD>

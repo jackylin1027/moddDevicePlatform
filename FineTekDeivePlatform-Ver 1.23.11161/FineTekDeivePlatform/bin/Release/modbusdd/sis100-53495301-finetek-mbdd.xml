@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FineTekModbusDD>
+  <Header>
+    <Form Height="600" Width="1000"></Form>
+    <Identity firmware="Ver1.0.05" hardware="Ver1.0.01" serial="Level" sensor="SIS100"></Identity>
+    <Communication interface="io-link-rs485"></Communication>
+    <SpecificFunction save_eeprom_addr="4713" load_default_addr="4714" load_firmware_addr="4715" ></SpecificFunction>
+  </Header>
+  <UserInterface>
+    <Grid Name="gridMAIN" Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- 這邊開始為兄弟們要寫的程式碼 -->
+        <ScrollViewer Name="scollviewerMAIN"   VerticalScrollBarVisibility="Auto" Grid.RowSpan="6" Grid.ColumnSpan="4">
+            <StackPanel Orientation="Vertical" >
+            <GroupBox Header="Real Time State" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" 
+						        UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="11" BorderThickness="2" Background="{Null}" FontWeight="Bold" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Vertical" >
+                        <TextBlock FontSize="18.667" FontWeight="Bold" Margin="5">物液位類</TextBlock>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock  Name="textblockCOM">COMPORT</TextBlock>
+                            <TextBlock Text=" / "></TextBlock>
+                            <TextBlock  Name="textblockSERIAL">五大變量</TextBlock>
+                            <TextBlock  Text=" / "></TextBlock>
+                            <TextBlock  Name="textblockSENSOR">感測器</TextBlock>
+                        </StackPanel>
+                        <Image Source="style/finetek-SIS100-pic.png" Stretch="UniformToFill" Height="100" Width="100" ></Image>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Orientation="Vertical" >
+                        <StackPanel Name="stackpanelREALTIME_CONTROL"  Orientation="Horizontal" Height="50">
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical" Margin="0,0,30,0">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="80">Serial Number</TextBlock>
+                                    <TextBox Name="editSERIAL_NUMBER" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="80">fdfd</TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="80">硬體版本</TextBlock>
+                            <TextBox Name="editHARDWARE_VERSION" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="80">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Name="editPRODUCT_NAME" VerticalAlignment="Center" Width="80">產品型號1</TextBlock>
+                            <TextBox Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="80">fdfd</TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                            <StackPanel  Orientation="Vertical" Margin="0,0,30,0">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="80">韌體版本</TextBlock>
+                                    <TextBox Name="editFIRMWARE_VERSION" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="80">fdfd</TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="80">靈敏度</TextBlock>
+                                    <TextBox Name="editSENSING_PEAK_POINT" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="80">fdfd</TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Width="80">Level</TextBlock>
+                                    <TextBox Name="editADC_LEVEL" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="80">fdfd</TextBox>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                    <GroupBox Name="groupboxREALTIME_CHART" Grid.Column="3" Grid.ColumnSpan="2" Style="{StaticResource GroupBoxStyleEmpty1}" Width="300">
+                    </GroupBox>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Header="裝置狀態與參數" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" 
+						    UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="10" BorderThickness="2" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Name="stackpanelSETTING_CONTROL" Grid.Column="2" VerticalAlignment="Top" Height="50" Orientation="Horizontal"></StackPanel>
+                    <StackPanel Orientation="Vertical" >
+                        <TextBlock Name="customlabelOUTPUT1" Style="{StaticResource MaterialDesignTitleTextBlock}" Text="Output1" FontSize="12" FontWeight="Bold" TextDecorations="Underline" >
+                            <TextBlock.Foreground>
+                                <SolidColorBrush Color="{DynamicResource {Static SystemColors.HighlightColorKey}}"/>
+                            </TextBlock.Foreground>
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">裝置狀態(1)</TextBlock>
+                            <TextBox Name="editDEVICE_OUTPUT1_STATES" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">裝置過電流狀態(1)</TextBlock>
+                            <TextBox Name="editOUT1_OVER_CURRENT_STATES" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">輸出功能(1)</TextBlock>
+                            <ComboBox Name="comboboxOUT1_MODE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100"></ComboBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">故障輸出模式設定(1)</TextBlock>
+                            <ComboBox Name="comboboxOUT1_FAULT_OUTPUT_MODE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100"></ComboBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">啟動點設定百分比(1)</TextBlock>
+                            <TextBox Name="editOUT1_START_POINT_PERCENTAGE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" Margin="5,0,0,0" MinWidth="50">%</TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">復歸點設定百分比(1)</TextBlock>
+                            <TextBox Name="editOUT1_REVERT_POINT_PERCENTAGE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" Margin="5,0,0,0" MinWidth="50">%</TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">啟動點延遲時間(1)</TextBlock>
+                            <TextBox Name="editOUT1_START_POINT_DELAY_TIME" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" Margin="5,0,0,0" MinWidth="50">sec</TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">復歸點延遲時間(1)</TextBlock>
+                            <TextBox Name="editOUT1_REVERT_POINT_DELAY_TIME" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" Margin="5,0,0,0" MinWidth="50">sec</TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">PRODUCT ID</TextBlock>
+                            <TextBox Name="editIOLINK_PRODUCT_ID" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">故障延遲時間</TextBlock>
+                            <TextBox Name="editFAULT_DELAY_TIME" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical" Grid.Column="1" >
+                        <TextBlock Name="customlabelOUTPUT2" Style="{StaticResource MaterialDesignTitleTextBlock}" Text="Output2" FontSize="12" FontWeight="Bold" TextDecorations="Underline" >
+                            <TextBlock.Foreground>
+                                <SolidColorBrush Color="{DynamicResource {Static SystemColors.HighlightColorKey}}"/>
+                            </TextBlock.Foreground>
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">裝置狀態(2)</TextBlock>
+                            <TextBox Name="editDEVICE_OUTPUT2_STATES" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">裝置過電流狀態(2)</TextBlock>
+                            <TextBox Name="editOUT2_OVER_CURRENT_STATES" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">輸出功能(2)</TextBlock>
+                            <ComboBox Name="comboboxOUT2_MODE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100"></ComboBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">故障輸出模式設定(2)</TextBlock>
+                            <ComboBox Name="comboboxOUT2_FAULT_OUTPUT_MODE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100"></ComboBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">啟動點設定百分比(2)</TextBlock>
+                            <TextBox Name="editOUT2_START_POINT_PERCENTAGE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" Margin="5,0,0,0" MinWidth="50">%</TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">復歸點設定百分比(2)</TextBlock>
+                            <TextBox Name="editOUT2_REVERT_POINT_PERCENTAGE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" Margin="5,0,0,0" MinWidth="50">%</TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">啟動點延遲時間(2)</TextBlock>
+                            <TextBox Name="editOUT2_START_POINT_DELAY_TIME" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" Margin="5,0,0,0" MinWidth="50">sec</TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">復歸點延遲時間(2)</TextBlock>
+                            <TextBox Name="editOUT2_REVERT_POINT_DELAY_TIME" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" Margin="5,0,0,0" MinWidth="50">sec</TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">輸出模式(PNP/NPN))</TextBlock>
+                            <ComboBox Name="comboboxDEVICE_OUTPUT_CONNECT_MODE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100"></ComboBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" Width="100">常用物料選擇</TextBlock>
+                            <ComboBox Name="comboboxMATERIAL_SELECT" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100"></ComboBox>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Column="2" >
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+            <GroupBox Name="groupboxHISTORY" Header="歷史資料" Height="300" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" 
+						    UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="10" BorderThickness="2" >
+                
+            </GroupBox>
+        </StackPanel>
+        </ScrollViewer>
+    </Grid>
+  </UserInterface>
+  <UIscript>
+    <ComboboxItemSource Id="comboboxOUT1_MODE" Type="string" Items="Hysteresis NO,Hysteresis NC,Window NO,Window NO" ItemsMapping="3,4,5,6">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxOUT1_FAULT_OUTPUT_MODE" Type="string" Items="F_ON,F_OFF" ItemsMapping="2,4">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxOUT2_MODE" Type="string" Items="Hysteresis NO,Hysteresis NC,Window NO,Window NO" ItemsMapping="3,4,5,6">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxOUT2_FAULT_OUTPUT_MODE" Type="string" Items="F_ON,F_OFF" ItemsMapping="2,4">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxDEVICE_OUTPUT_CONNECT_MODE" Type="string" Items="PNP,NPN" ItemsMapping="0,1">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxMATERIAL_SELECT" Type="string" Items="水,油/粉,含水低含糖介質,粉塵防爆" ItemsMapping="0,1,2,3">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="combobxHARDWARE_SELECT" Type="string" Items="序號,硬體版本" ItemsMapping="0,1">
+    </ComboboxItemSource>
+		<EditContentMapping Id="editDEVICE_OUTPUT1_STATES" Type="string" Content="NORMAL_STATE,ACTION_STATE,ALARM_STATE" ContentMapping="0,1,2">
+    </EditContentMapping>
+		<EditContentMapping Id="editDEVICE_OUTPUT2_STATES" Type="string" Content="NORMAL_STATE,ACTION_STATE,ALARM_STATE" ContentMapping="0,1,2">
+    </EditContentMapping>
+		<EditContentMapping Id="editOUT1_OVER_CURRENT_STATES" Type="string" Content="NORMAL_STATE,TEMP_CHK_STATE,ALARM_STATE" ContentMapping="0,1,2">
+    </EditContentMapping>
+		<EditContentMapping Id="editOUT2_OVER_CURRENT_STATES" Type="string" Content="NORMAL_STATE,TEMP_CHK_STATE,ALARM_STATE" ContentMapping="0,1,2">
+    </EditContentMapping>
+  </UIscript>
+  <!--Length 請使用物理單位量, ex Float32 = 1, Float64 = 1, int/uint32 = 1, int/uint16 = 1,-->
+  <CommunicationRoutine>
+    <Sequence Address="4128" Length="17" Attribute = "r">
+    </Sequence>
+    <Sequence Address="4649" Length="105" Attribute = "rw">>
+    </Sequence>
+  </CommunicationRoutine>
+  <ModbusParameter>
+    <Cell RelateName="editFIRMWARE_VERSION" Address="4128" DataType="INT16" StringLen="6" />
+    <Cell RelateName="editFIRMWARE_VERSION" Address="4129" DataType="INT16" StringLen="6" />
+    <Cell RelateName="editFIRMWARE_VERSION" Address="4130" DataType="INT16" StringLen="6" />
+    <Cell RelateName="editFIRMWARE_VERSION" Address="4131" DataType="INT16" StringLen="6" />
+    <Cell RelateName="editFIRMWARE_VERSION" Address="4132" DataType="INT16" StringLen="6" />
+    <Cell RelateName="editFIRMWARE_VERSION" Address="4133" DataType="INT16" StringLen="6" />
+    <Cell RelateName="editDEVICE_OUTPUT1_STATES" Address="4134" DataType="UINT16" />
+    <Cell RelateName="editDEVICE_OUTPUT2_STATES" Address="4135" DataType="UINT16" />
+    <Cell RelateName="editOUT1_OVER_CURRENT_STATES" Address="4136" DataType="UINT16" />
+    <Cell RelateName="editOUT2_OVER_CURRENT_STATES" Address="4137" DataType="UINT16" />
+    <Cell RelateName="" Address="4138" DataType="UINT16" />
+    <Cell RelateName="" Address="4139" DataType="UINT16" />
+    <Cell RelateName="editTEMPERATURE" Address="4140" DataType="FLOAT32" />
+    <Cell RelateName="editVIN_VOLTAGE" Address="4142" DataType="FLOAT32" />
+    <Cell RelateName="editSENSING_PEAK_POINT" Address="4144" DataType="FLOAT32" />
+    <Cell RelateName="editADC_LEVEL" Address="4146" DataType="UINT16" DSCkey="percentage"/>
+    <Cell RelateName="" Address="4147" DataType="UINT16" />
+    <Cell RelateName="" Address="4148" DataType="UINT16" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4649" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4650" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4651" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4652" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4653" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4654" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4655" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4656" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4657" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4658" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4659" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4660" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4661" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4662" DataType="INT16" StringLen="15" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4663" DataType="INT16" StringLen="15" />
+    <Cell RelateName="" Address="4664" DataType="INT16" StringLen="42" />
+    <Cell RelateName="" Address="4665" DataType="INT16" StringLen="42" />
+    <Cell RelateName="" Address="4666" DataType="INT16" StringLen="42" />
+    <Cell RelateName="" Address="4667" DataType="INT16" StringLen="42" />
+    <Cell RelateName="" Address="4668" DataType="INT16" StringLen="42" />
+    <Cell RelateName="" Address="4669" DataType="INT16" StringLen="42" />
+    <Cell RelateName="" Address="4670" DataType="INT16" StringLen="42" />
+    <Cell RelateName="" Address="4671" DataType="INT16" StringLen="42" />
+    <Cell RelateName="" Address="4672" DataType="INT16" StringLen="42" />
+    <Cell RelateName="" Address="4673" DataType="INT16" StringLen="42" />
+    <Cell RelateName="editHARDWARE_VERSION" Address="4674" DataType="INT16" StringLen="11" />
+    <Cell RelateName="editHARDWARE_VERSION" Address="4675" DataType="INT16" StringLen="11" />
+    <Cell RelateName="editHARDWARE_VERSION" Address="4676" DataType="INT16" StringLen="11" />
+    <Cell RelateName="editHARDWARE_VERSION" Address="4677" DataType="INT16" StringLen="11" />
+    <Cell RelateName="editHARDWARE_VERSION" Address="4678" DataType="INT16" StringLen="11" />
+    <Cell RelateName="editHARDWARE_VERSION" Address="4679" DataType="INT16" StringLen="11" />
+    <Cell RelateName="editHARDWARE_VERSION" Address="4680" DataType="INT16" StringLen="11" />
+    <Cell RelateName="editHARDWARE_VERSION" Address="4681" DataType="INT16" StringLen="11" />
+    <Cell RelateName="editHARDWARE_VERSION" Address="4682" DataType="INT16" StringLen="11" />
+    <Cell RelateName="editHARDWARE_VERSION" Address="4683" DataType="INT16" StringLen="11" />
+    <Cell RelateName="editHARDWARE_VERSION" Address="4684" DataType="INT16" StringLen="11" />
+    <Cell RelateName="comboboxOUT1_MODE" Address="4685" DataType="UINT16" />
+    <Cell RelateName="comboboxOUT1_FAULT_OUTPUT_MODE" Address="4686" DataType="UINT16" />
+    <Cell RelateName="editOUT1_START_POINT_PERCENTAGE" Address="4687" DataType="UINT16" />
+    <Cell RelateName="editOUT1_REVERT_POINT_PERCENTAGE" Address="4688" DataType="UINT16" />
+    <Cell RelateName="editOUT1_START_POINT_DELAY_TIME" Address="4689" DataType="UINT16" />
+    <Cell RelateName="editOUT1_REVERT_POINT_DELAY_TIME" Address="4690" DataType="UINT16" />
+    <Cell RelateName="" Address="4691" DataType="UINT16" />
+    <Cell RelateName="" Address="4692" DataType="UINT16" />
+    <Cell RelateName="comboboxOUT2_MODE" Address="4693" DataType="UINT16" />
+    <Cell RelateName="comboboxOUT2_FAULT_OUTPUT_MODE" Address="4694" DataType="UINT16" />
+    <Cell RelateName="editOUT2_START_POINT_PERCENTAGE" Address="4695" DataType="UINT16" />
+    <Cell RelateName="editOUT2_REVERT_POINT_PERCENTAGE" Address="4696" DataType="UINT16" />
+    <Cell RelateName="editOUT2_START_POINT_DELAY_TIME" Address="4697" DataType="UINT16" />
+    <Cell RelateName="editOUT2_REVERT_POINT_DELAY_TIME" Address="4698" DataType="UINT16" />
+    <Cell RelateName="" Address="4699" DataType="UINT16" />
+    <Cell RelateName="" Address="4700" DataType="UINT16" />
+    <Cell RelateName="editFAULT_DELAY_TIME" Address="4701" DataType="UINT16" />
+    <Cell RelateName="comboboxDEVICE_OUTPUT_CONNECT_MODE" Address="4702" DataType="UINT16" />
+    <Cell RelateName="editVOLTAGE_HI_ALARM_POINT" Address="4703" DataType="UINT16" />
+    <Cell RelateName="editVOLTAGE_LO_ALARM_POINT" Address="4704" DataType="UINT16" />
+    <Cell RelateName="editTEMP_HI_ALARM_POINT" Address="4705" DataType="UINT16" />
+    <Cell RelateName="editTEMP_LO_ALARM_POINT" Address="4706" DataType="UINT16" />
+    <Cell RelateName="" Address="4707" DataType="UINT16" />
+    <Cell RelateName="" Address="4708" DataType="UINT16" />
+    <Cell RelateName="" Address="4709" DataType="UINT16" />
+    <Cell RelateName="editRF_GAIN_CONTROL_VALUE" Address="4710" DataType="UINT16" />
+    <Cell RelateName="" Address="4711" DataType="UINT16" />
+    <Cell RelateName="" Address="4712" DataType="UINT16" />
+    <Cell RelateName="" Address="4713" DataType="UINT16" />
+    <Cell RelateName="" Address="4714" DataType="UINT16" />
+    <Cell RelateName="" Address="4715" DataType="UINT16" />
+    <Cell RelateName="" Address="4716" DataType="UINT16" />
+    <Cell RelateName="editCHARGE_PUMP_START_V_COUNT" Address="4717" DataType="UINT16" />
+    <Cell RelateName="editCHARGE_PUMP_END_V_COUNT" Address="4718" DataType="UINT16" />
+    <Cell RelateName="editCHARGE_PUMP_STEP" Address="4719" DataType="UINT16" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4720" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4721" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4722" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4723" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4724" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4725" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4726" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4727" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4728" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4729" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4730" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4731" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4732" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4733" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4734" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4735" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4736" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editPRODUCT_NAME" Address="4737" DataType="INT16" StringLen="18" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4738" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4739" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4740" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4741" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4742" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4743" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4744" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4745" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4746" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4747" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4748" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4749" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4750" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4751" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4752" DataType="INT16" StringLen="16" />
+    <Cell RelateName="editIOLINK_PRODUCT_ID" Address="4753" DataType="INT16" StringLen="16" />
+  </ModbusParameter>
+  <ChartDefination>
+  	<entity RelateName="editSENSING_PEAK_POINT" unit="靈敏度%"></entity>
+  	<interval calculate_targer="modbus_interval" number="2"></interval>
+  </ChartDefination>
+  <SqlRoutine>
+  	<displaylitem RelateName="editSENSING_PEAK_POINT" key="display_value"/>
+  	<historysqlitem RelateName="editSERIAL_NUMBER" key="sn" type="string"/>
+  	<historysqlitem RelateName="editFIRMWARE_VERSION" key="firmware" type="string" />
+  	<historysqlitem RelateName="editDEVICE_OUTPUT1_STATES" key="output_state_1" type="object"  />
+  	<historysqlitem RelateName="editDEVICE_OUTPUT2_STATES" key="output_state_2" type="object" />
+  	<historysqlitem RelateName="editSENSING_PEAK_POINT" key="percentage" type="object"/>
+  	<historysqlitem RelateName="editADC_LEVEL" key="sensitivity" type="object"/>
+	</SqlRoutine>
+</FineTekModbusDD>

@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="FineTekDeivePlatform.component.fk_combobox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FineTekDeivePlatform.component"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             d:DesignHeight="15" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="nameLabel" Style="{StaticResource MaterialDesignTitleTextBlock}" Grid.ColumnSpan="3" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_combobox}}, Path=fk_combobox_label}"
+                   Margin="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type local:fk_combobox}}, Path=fk_label_margin}">
+        </TextBlock>
+        <!--  <materialDesign:PackIcon Kind="ArrowDownDropCircle" Grid.Column="1" Grid.ColumnSpan="3" Panel.ZIndex="0" HorizontalAlignment="Right" VerticalAlignment="Center" />-->
+        <materialDesign:ColorZone  Grid.Column="1" Grid.ColumnSpan="3" Mode="Standard" CornerRadius="10" Panel.ZIndex="1"  materialDesign:ShadowAssist.ShadowDepth="Depth1"
+                                   Margin="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type local:fk_combobox}}, Path=fk_combobox_margin}">
+
+            <ComboBox x:Name="MainCombobox"
+                      ItemsSource="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type local:fk_combobox}},Path=fk_combobox_ItemSource}"
+                      SelectedItem="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_combobox}},Path=fk_combobox_SelectedItem}"
+                      SelectedIndex="{Binding RelativeSource={ RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_combobox}},Path=fk_combobox_SelectedIndex}"
+                      SelectedValue="{Binding RelativeSource={ RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_combobox}},Path=fk_combobox_SelectedValue}" 
+                      SelectionChanged="nameCombobx_SelectionChanged_2" BorderThickness="0" IsReadOnly="True" FontSize="14" VerticalAlignment="Center" Margin="3,0" Padding="0,4" FontWeight="Bold" IsSynchronizedWithCurrentItem="True"/>
+        </materialDesign:ColorZone>
+        <TextBlock x:Name="nameUnit" Style="{StaticResource MaterialDesignTitleTextBlock}" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" FontWeight="Bold" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_combobox}}, Path=fk_combobox_unit}"
+                   Margin="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type local:fk_combobox}}, Path=fk_unit_margin}">
+        </TextBlock>
+    </Grid>
+</UserControl>

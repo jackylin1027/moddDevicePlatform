@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FineTekModbusDD>
+  <Header>
+    <Form Height="600" Width="1000">
+    </Form>
+    <Identity firmware="A0001" hardware="Unknow" serial="Flow" sensor="EPU">
+    </Identity>
+    <Communication interface="rs485">
+    </Communication>
+    <SpecificFunction save_eeprom_addr="4272" load_default_addr="4274" load_firmware_addr="4187">
+    </SpecificFunction>
+  </Header>
+  <UserInterface>
+    <Grid Name="gridMAIN" Margin="0,0,0,0">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <!-- 這邊開始為兄弟們要寫的程式碼 -->
+      <ScrollViewer Name="scollviewerMAIN" Grid.RowSpan="6" Grid.ColumnSpan="4" VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+          <GroupBox Header="System status" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="11" BorderThickness="2" Background="{Null}" FontWeight="Bold">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto">
+                </ColumnDefinition>
+                <ColumnDefinition Width="auto">
+                </ColumnDefinition>
+                <ColumnDefinition Width="auto">
+                </ColumnDefinition>
+                <ColumnDefinition Width="*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="*">
+                </ColumnDefinition>
+              </Grid.ColumnDefinitions>
+              <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                  <TextBlock Name="textblockCOM">COMPORT</TextBlock>
+                  <TextBlock Text=" / ">
+                  </TextBlock>
+                  <TextBlock Name="textblockSERIAL">五大變量</TextBlock>
+                  <TextBlock Text=" / ">
+                  </TextBlock>
+                  <TextBlock Name="textblockSENSOR">感測器</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                  <materialDesignPackIcon Kind="UserEdit" VerticalAlignment="Stretch" />
+                  <TextBox Name="textboxSENSOR_STATION" TextWrapping="Wrap" FontSize="15" FontWeight="Bold" Foreground="Blue" BorderThickness="0" Margin="10,0,0,0" MaxWidth="160">流量類</TextBox>
+                </StackPanel>
+                <Image Source="style/EPU.png" Stretch="UniformToFill" Height="Auto" Width="180">
+                </Image>
+              </StackPanel>
+              <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Orientation="Vertical" Margin="10,0,0,0">
+                <StackPanel Name="stackpanelREALTIME_CONTROL" Orientation="Horizontal" Height="50">
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                  <StackPanel Orientation="Vertical" Margin="0,20,20,50">
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Serial Number</TextBlock>
+                      <TextBox Name="editSERIAL_NUMBER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Flow Rate</TextBlock>
+                      <TextBox Name="editFLOW_RATE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                      <TextBlock VerticalAlignment="Center">m3/h</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Forward Total</TextBlock>
+                      <TextBox Name="editFORWARD_TOTAL" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                      <TextBlock VerticalAlignment="Center">m3</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Reverse Total</TextBlock>
+                      <TextBox Name="editREVERSE_TOTAL" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                      <TextBlock VerticalAlignment="Center">m3</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="100">Bi-direction Total</TextBlock>
+                      <TextBox Name="editBIDIR_TOTAL" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                      <TextBlock VerticalAlignment="Center">m3</TextBlock>
+                    </StackPanel>
+                  </StackPanel>
+                  <GroupBox Name="groupboxREALTIME_CHART" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="10,0,0,10" Width="500">
+                  </GroupBox>
+                </StackPanel>
+              </StackPanel>
+            </Grid>
+          </GroupBox>
+          <StackPanel Orientation="Horizontal">
+            <GroupBox Header="裝置參數" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="10" BorderThickness="2">
+              <Grid>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="auto">
+                  </ColumnDefinition>
+                  <ColumnDefinition Width="auto">
+                  </ColumnDefinition>
+                  <ColumnDefinition Width="*">
+                  </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Vertical">
+                  <StackPanel Name="stackpanelSETTING_CONTROL" VerticalAlignment="Top" Height="50" Orientation="Horizontal">
+                  </StackPanel>
+                  <StackPanel Margin="0,20,0,70">
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="80">Flow Unit</TextBlock>
+                      <ComboBox Name="comboboxFLOW_UNIT" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="80">Direction</TextBlock>
+                      <ComboBox Name="comboboxDIRECTION" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="80">Total Unit</TextBlock>
+                      <ComboBox Name="comboboxTOTAL_UNIT" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="80">Total Mode</TextBlock>
+                      <ComboBox Name="comboboxTOTAL_MODE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock VerticalAlignment="Center" Width="80">Total Reset</TextBlock>
+                      <TextBox Name="editTOTAL_RESET" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">
+                      </TextBox>
+                    </StackPanel>
+                  </StackPanel>
+                </StackPanel>
+              </Grid>
+            </GroupBox>
+            <GroupBox Name="groupboxHISTORY" Header="歷史資料" Width="810" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="10" BorderThickness="2">
+            </GroupBox>
+          </StackPanel>
+        </StackPanel>
+      </ScrollViewer>
+    </Grid>
+  </UserInterface>
+  <UIscript>
+    <ComboboxItemSource Id="comboboxFLOW_UNIT" Type="string" Items="L/m,L/h,m3/m,m3/h,gal/m,gal/h" ItemsMapping="0,1,2,3,4,5">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxDIRECTION" Type="string" Items="Forward,Reverse" ItemsMapping="0,1">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxTOTAL_UNIT" Type="string" Items="Liter,gal,m3,kg,Ton" ItemsMapping="0,1,2,3,4">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxTOTAL_MODE" Type="string" Items="Forward,Reverse,Biderection" ItemsMapping="0,1,2">
+    </ComboboxItemSource>
+  </UIscript>
+  <exFunction>
+    <!-- event list  cicombobox selectindex_change, tttextbox text_change -->
+  </exFunction>
+  <!--Length 請使用物理單位量, ex Float32 = 1, Float64 = 1, int/uint32 = 1, int/uint16 = 1,-->
+  <CommunicationRoutine>
+    <Sequence Address="4144" Length="48" Attribute="r">
+    </Sequence>
+    <Sequence Address="4325" Length="111" Attribute="rw">
+    </Sequence>
+  </CommunicationRoutine>
+  <ModbusParameter>
+    <Cell RelateName="editFLOW_RATE" Address="4144" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4148" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4152" DataType="UINT16" />
+    <Cell RelateName="editFORWARD_TOTAL" Address="4153" DataType="FLOAT64" />
+    <Cell RelateName="editREVERSE_TOTAL" Address="4157" DataType="FLOAT64" />
+    <Cell RelateName="editBIDIR_TOTAL" Address="4161" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4165" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4169" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4173" DataType="UINT32" />
+    <Cell RelateName="" Address="4175" DataType="UINT32" />
+    <Cell RelateName="" Address="4177" DataType="UINT32" />
+    <Cell RelateName="" Address="4179" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4181" DataType="UINT16" />
+    <Cell RelateName="" Address="4182" DataType="UINT16" />
+    <Cell RelateName="" Address="4183" DataType="UINT16" />
+    <Cell RelateName="" Address="4184" DataType="UINT16" />
+    <Cell RelateName="" Address="4185" DataType="UINT16" />
+    <Cell RelateName="" Address="4186" DataType="UINT16" />
+    <Cell RelateName="" Address="4187" DataType="UINT16" />
+    <Cell RelateName="" Address="4188" DataType="UINT16" />
+    <Cell RelateName="" Address="4189" DataType="UINT16" />
+    <Cell RelateName="" Address="4190" DataType="UINT16" />
+    <Cell RelateName="" Address="4191" DataType="UINT16" />
+    <Cell RelateName="" Address="4272" DataType="UINT16" />
+    <Cell RelateName="" Address="4273" DataType="UINT16" />
+    <Cell RelateName="" Address="4274" DataType="UINT16" />
+    <Cell RelateName="" Address="4275" DataType="UINT16" />
+    <Cell RelateName="" Address="4276" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4278" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4280" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4282" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4284" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4286" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4288" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4292" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4296" DataType="UINT32" />
+    <Cell RelateName="" Address="4298" DataType="UINT16" />
+    <Cell RelateName="" Address="4299" DataType="UINT16" />
+    <Cell RelateName="" Address="4300" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4304" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4308" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4310" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4312" DataType="UINT32" />
+    <Cell RelateName="" Address="4314" DataType="UINT32" />
+    <Cell RelateName="" Address="4316" DataType="UINT16" />
+    <Cell RelateName="" Address="4317" DataType="UINT16" />
+    <Cell RelateName="" Address="4318" DataType="UINT16" />
+    <Cell RelateName="" Address="4319" DataType="UINT16" />
+    <Cell RelateName="" Address="4320" DataType="UINT16" />
+    <Cell RelateName="" Address="4321" DataType="UINT16" />
+    <Cell RelateName="" Address="4322" DataType="UINT16" />
+    <Cell RelateName="" Address="4323" DataType="UINT16" />
+    <Cell RelateName="" Address="4324" DataType="UINT16" />
+    <Cell RelateName="comboboxFLOW_UNIT" Address="4325" DataType="UINT16" />
+    <Cell RelateName="" Address="4326" DataType="UINT16" />
+    <Cell RelateName="comboboxDIRECTION" Address="4327" DataType="UINT16" />
+    <Cell RelateName="comboboxTOTAL_UNIT" Address="4328" DataType="UINT16" />
+    <Cell RelateName="comboboxTOTAL_MODE" Address="4329" DataType="UINT16" />
+    <Cell RelateName="editTOTAL_RESET" Address="4330" DataType="UINT16" />
+    <Cell RelateName="" Address="4331" DataType="UINT16" />
+    <Cell RelateName="" Address="4332" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4334" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4336" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4338" DataType="FLOAT32" />
+    <Cell RelateName="" Address="4340" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4344" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4348" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4352" DataType="UINT16" />
+    <Cell RelateName="" Address="4353" DataType="UINT16" />
+    <Cell RelateName="" Address="4354" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4358" DataType="FLOAT64" />
+    <Cell RelateName="" Address="4362" DataType="UINT16" />
+    <Cell RelateName="" Address="4363" DataType="UINT16" />
+    <Cell RelateName="" Address="4364" DataType="UINT16" />
+    <Cell RelateName="" Address="4365" DataType="UINT16" />
+    <Cell RelateName="" Address="4366" DataType="UINT16" />
+    <Cell RelateName="" Address="4367" DataType="UINT16" />
+    <Cell RelateName="" Address="4368" DataType="UINT16" />
+    <Cell RelateName="" Address="4369" DataType="UINT16" />
+    <Cell RelateName="" Address="4370" DataType="UINT16" />
+    <Cell RelateName="" Address="4371" DataType="UINT16" />
+    <Cell RelateName="" Address="4372" DataType="UINT16" />
+    <Cell RelateName="" Address="4373" DataType="UINT16" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4374" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4375" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4376" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4377" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4378" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4379" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4380" DataType="INT16" StringLen="8" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="4381" DataType="INT16" StringLen="8" />
+  </ModbusParameter>
+  <ChartDefination>
+    <entity RelateName="editFLOW_RATE" unit="瞬間值lpm">
+    </entity>
+    <interval calculate_targer="modbus_interval" number="2">
+    </interval>
+  </ChartDefination>
+  <SqlRoutine>
+    <displaylitem RelateName="editFLOW_RATE" key="display_value" />
+    <historysqlitem RelateName="editFORWARD_TOTAL" key="f_accu_flow" type="object" />
+    <historysqlitem RelateName="editREVERSE_TOTAL" key="r_accu_flow" type="object" />
+    <historysqlitem RelateName="editBIDIR_TOTAL" key="b_accu_flow" type="object" />
+    <historysqlitem RelateName="editFLOW_RATE" key="flow_rate" type="object" />
+    <historysqlitem RelateName="editSERIAL_NUMBER" key="sn" type="string" />
+  </SqlRoutine>
+</FineTekModbusDD>

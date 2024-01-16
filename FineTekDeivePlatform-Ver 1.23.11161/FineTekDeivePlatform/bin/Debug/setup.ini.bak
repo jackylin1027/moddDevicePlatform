@@ -1,0 +1,6 @@
+[COMMULATION SETTING]
+comport=COM3
+baudrate=38400
+id=1
+[MYSQL]
+connect_prompt=Server=localhost;Database=iiot;uid=root;port=3307

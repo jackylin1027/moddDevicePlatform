@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="FineTekDeivePlatform.component.fk_edit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FineTekDeivePlatform.component"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             d:DesignHeight="15" d:DesignWidth="300" IsEnabledChanged="UserControl_IsEnabledChanged">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="nameLabel" Grid.ColumnSpan="3" Style="{StaticResource MaterialDesignTitleTextBlock}" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                   Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_edit}}, Path=fk_edit_label}"
+                   Margin="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type local:fk_edit}}, Path=fk_label_margin}">
+        </TextBlock>
+        <materialDesign:ColorZone  Grid.Column="1" Grid.ColumnSpan="3" Mode="Standard" CornerRadius="10" Panel.ZIndex="1"  materialDesign:ShadowAssist.ShadowDepth="Depth1"
+                                   Margin="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type local:fk_edit}}, Path=fk_text_margin}"
+                                   Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type local:fk_edit}}, Path=fk_text_width}" VerticalAlignment="Center">
+            <TextBox x:Name="nameContext"  FontSize="14" BorderThickness="0" VerticalAlignment="Center" FontWeight="Bold" Margin="3,0,3,0" 
+                     Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_edit}}, Path=fk_edit_text}" TextAlignment="Right" TextChanged="nameContext_TextChanged"
+                     />
+        </materialDesign:ColorZone>
+        <TextBlock x:Name="nameUnit" Style="{StaticResource MaterialDesignTitleTextBlock}" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" FontWeight="Bold" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_edit}}, Path=fk_edit_unit}"
+                   Margin="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type local:fk_edit}}, Path=fk_unit_margin}">
+        </TextBlock>
+    </Grid>
+</UserControl>

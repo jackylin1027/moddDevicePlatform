@@ -1,0 +1,283 @@
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\FineTek Deivce Platform.exe.config
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform.exe
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\FineTek Deivce Platform.exe
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\FineTek Deivce Platform.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\CommonServiceLocator.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\Dragablz.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\Finetek_FPAS_UtilityTool.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LedDigital.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.Geared.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.Wpf.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MaterialDesignColors.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MaterialDesignThemes.Wpf.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MySql.Data.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\System.Windows.Interactivity.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\DocumentFormat.OpenXml.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\Dragablz.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\Dragablz.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\Finetek_FPAS_UtilityTool.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LedDigital.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.Wpf.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.Wpf.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MaterialDesignColors.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MaterialDesignThemes.Wpf.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MaterialDesignThemes.Wpf.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MySql.Data.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\DocumentFormat.OpenXml.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTekDeivePlatform.csprojResolveAssemblyReference.cache
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTekDeivePlatform.csproj.FineTek Deivce Platform.exe.config
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_advancedchart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_basiclinechart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_button.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_combobox.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_customlabel.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_edit.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_imagebutton.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_labeledit.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_multilabel.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_slider.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_theme.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_theme_fse.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\specialmodel\fk_epht_billboard.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\HistoryChart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\MainWindow.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\RealTimeChart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\View\EphProductView.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\View\LedDigitalView.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\App.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform_MarkupCompile.cache
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform_MarkupCompile.lref
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\App.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_advancedchart.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_basiclinechart.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_button.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_combobox.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_customlabel.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_edit.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_imagebutton.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_labeledit.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_multilabel.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_slider.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_theme.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_theme_fse.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\specialmodel\fk_epht_billboard.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\HistoryChart.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\MainWindow.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\RealTimeChart.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\View\EphProductView.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\View\LedDigitalView.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform.g.resources
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTekDeivePlatform.Properties.Resources.resources
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTekDeivePlatform.csproj.GenerateResource.Cache
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\FineTek Deivce Platform.exe.config
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform.exe
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\FineTek Deivce Platform.exe
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\FineTek Deivce Platform.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\CommonServiceLocator.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\Dragablz.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\Finetek_FPAS_UtilityTool.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LedDigital.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.Geared.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MaterialDesignColors.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MySql.Data.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\Dragablz.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\Dragablz.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\Finetek_FPAS_UtilityTool.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LedDigital.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MaterialDesignColors.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\MySql.Data.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTekDeivePlatform.csprojResolveAssemblyReference.cache
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_advancedchart.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_basiclinechart.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_button.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_combobox.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_customlabel.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_edit.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_imagebutton.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_labeledit.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_multilabel.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_slider.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_theme.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_theme_fse.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\specialmodel\fk_epht_billboard.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\HistoryChart.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\MainWindow.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\RealTimeChart.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\View\EphProductView.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\View\LedDigitalView.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\App.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform_MarkupCompile.cache
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform_MarkupCompile.lref
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\App.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_advancedchart.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_basiclinechart.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_button.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_combobox.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_customlabel.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_edit.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_imagebutton.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_labeledit.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_multilabel.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_slider.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_theme.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\fk_theme_fse.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\component\specialmodel\fk_epht_billboard.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\HistoryChart.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\MainWindow.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\RealTimeChart.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\View\EphProductView.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\View\LedDigitalView.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform.g.resources
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTekDeivePlatform.Properties.Resources.resources
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Debug\FineTekDeivePlatform.csproj.GenerateResource.Cache
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\FineTek Deivce Platform.exe.config
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform.exe
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\FineTek Deivce Platform.exe
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\FineTek Deivce Platform.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\CommonServiceLocator.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\Dragablz.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\Finetek_FPAS_UtilityTool.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\LedDigital.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\LiveCharts.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\LiveCharts.Geared.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\MaterialDesignColors.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\MySql.Data.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\Dragablz.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\Dragablz.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\Finetek_FPAS_UtilityTool.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\LedDigital.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\LiveCharts.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\LiveCharts.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\MaterialDesignColors.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\MySql.Data.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTekDeivePlatform.csprojResolveAssemblyReference.cache
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_advancedchart.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_basiclinechart.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_button.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_combobox.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_customlabel.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_edit.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_imagebutton.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_labeledit.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_multilabel.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_slider.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_theme.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_theme_fse.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\specialmodel\fk_epht_billboard.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\HistoryChart.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\MainWindow.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\RealTimeChart.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\View\EphProductView.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\View\LedDigitalView.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\App.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform_MarkupCompile.cache
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform_MarkupCompile.lref
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\App.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_advancedchart.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_basiclinechart.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_button.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_combobox.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_customlabel.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_edit.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_imagebutton.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_labeledit.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_multilabel.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_slider.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_theme.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_theme_fse.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\specialmodel\fk_epht_billboard.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\HistoryChart.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\MainWindow.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\RealTimeChart.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\View\EphProductView.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\View\LedDigitalView.baml
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform.g.resources
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTekDeivePlatform.Properties.Resources.resources
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTekDeivePlatform.csproj.GenerateResource.Cache
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\homepage\fk_five_variation_chart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\bin\Debug\FineTek Deivce Platform.exe.config
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform.exe
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTekDeivePlatform.csprojResolveAssemblyReference.cache
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTekDeivePlatform.csproj.FineTek Deivce Platform.exe.config
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_advancedchart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_basiclinechart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_button.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_combobox.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_customlabel.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_edit.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_imagebutton.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_labeledit.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_multilabel.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_slider.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_theme.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\fk_theme_fse.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\homepage\fk_five_variation_chart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\specialmodel\fk_epht_billboard.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\HistoryChart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\MainWindow.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\RealTimeChart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\View\EphProductView.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\View\LedDigitalView.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\App.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform_MarkupCompile.cache
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\FineTek Deivce Platform_MarkupCompile.lref
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11161\FineTekDeivePlatform\obj\Debug\component\homepage\fk_five_variation_chart.baml

@@ -1,0 +1,133 @@
+﻿<UserControl x:Class="FineTekDeivePlatform.component.fk_theme"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FineTekDeivePlatform.component"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" Width="700">
+    <Grid RenderOptions.EdgeMode="Aliased">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" ></ColumnDefinition>
+            <ColumnDefinition Width="217*"></ColumnDefinition>
+            <ColumnDefinition Width="133*"></ColumnDefinition>
+            <ColumnDefinition Width="217*"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="129*"></RowDefinition>
+            <RowDefinition Height="178*"></RowDefinition>
+            <RowDefinition Height="154*"></RowDefinition>
+            <RowDefinition Height="154*"></RowDefinition>
+            <RowDefinition Height="154*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Source="../style/theme2_logo.png" Grid.Row="0" Grid.Column="1"  Grid.ColumnSpan="3" Stretch="Fill"   />
+        <Image Source="../style/theme5.png" Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Stretch="Fill" ></Image>
+        <Image Source="../style/theme8.png" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Stretch="Fill" ></Image>
+        <Image Source="../style/theme1.png" Grid.Row="0" Grid.Column="0" Stretch="Fill" />
+        <Image Source="../style/theme4.png" Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Stretch="Fill" ></Image>
+        <Image Source="../style/theme7.png" Grid.Row="4" Grid.Column="0" Stretch="Fill" ></Image>
+        <Image Source="../style/theme3.png" Grid.Column="4"  Stretch="Fill"></Image>
+        <Image Source="../style/theme6.png" Grid.Row="1" Grid.Column="4" Grid.RowSpan="3" Stretch="Fill" ></Image>
+        <Image Source="../style/theme9.png" Grid.Row="4" Grid.Column="4" Stretch="Fill" ></Image>
+        <TextBlock x:Name="themeSOFTWARE_VERSION" Grid.Column="3" Margin="40,20,0,0" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" 
+                   Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type local:fk_theme}},Path=FK_SOFTWATR_VERSION }">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </TextBlock.Foreground></TextBlock>
+
+        <TextBlock x:Name="themeSOFTWARE_DESCRIBE" Grid.Column="3" Margin="40,45,0,0" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" 
+                   Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_theme}}, Path=FK_SOFTWATR_DESCRIBE }">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </TextBlock.Foreground></TextBlock>
+        <Viewbox Grid.ColumnSpan="5" Margin="5,0,10,0">
+            <StackPanel Orientation="Horizontal"  Margin="0,50,0,0">
+                <TextBlock Style="{StaticResource MaterialDesignTitleTextBlock}" Margin="5,0,0,0" FontSize="12" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"  >
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                    </TextBlock.Foreground>
+                        ID:
+                </TextBlock>
+                <materialDesign:ColorZone Mode="Standard" CornerRadius="10" Panel.ZIndex="1" Margin="5 0 0 0" materialDesign:ShadowAssist.ShadowDepth="Depth3" VerticalAlignment="Center" FontWeight="Bold">
+                    <TextBox x:Name="textboxMODBUS_ID" FontSize="11" VerticalAlignment="Center" FontWeight="Bold" HorizontalContentAlignment="Center" Margin="3,0,3,0" MinWidth="50" MaxWidth="70" 
+                         Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type local:fk_theme}},Path=FK_MODBUS_ID}"/>
+                </materialDesign:ColorZone>
+
+                <TextBlock Style="{StaticResource MaterialDesignTitleTextBlock}" FontSize="12" Margin="5,0,0,0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"  >
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                    </TextBlock.Foreground>
+                        Baudrate:
+                </TextBlock>
+                <materialDesign:ColorZone Mode="Standard" CornerRadius="10" Panel.ZIndex="1" Margin="5 0 0 0" materialDesign:ShadowAssist.ShadowDepth="Depth3" VerticalAlignment="Center">
+                    <ComboBox x:Name="comboboxBaudrte" Margin="3,0,3,0" Width="60" FontWeight="Bold" HorizontalContentAlignment="Center" FontSize="11" 
+                              SelectedValue="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_theme}},Path=FK_BAUDRATE}" Padding="0,4" HorizontalAlignment="Right"/>
+                </materialDesign:ColorZone>
+                <materialDesign:ColorZone Mode="Standard" CornerRadius="10"  Panel.ZIndex="1" Margin="5 0 0 0" materialDesign:ShadowAssist.ShadowDepth="Depth3" VerticalAlignment="Center">
+                    <ComboBox x:Name="comboboxCOM" Margin="3,0,3,0" Width="60" FontWeight="Bold" HorizontalContentAlignment="Center" FontSize="11"
+                          SelectedValue="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_theme}},Path=FK_COMPORT}" Padding="0,4" HorizontalAlignment="Right"/>
+                </materialDesign:ColorZone>
+
+                <Button x:Name="buttonNone" Style="{StaticResource MaterialDesignRaisedButton}" materialDesign:ButtonAssist.CornerRadius="8" Margin="6 0 0 0" ToolTip="Nono" Height="Auto" materialDesign:ShadowAssist.ShadowDepth="Depth5" BorderThickness="0" VerticalAlignment="Center" Click="buttonNone_Click" Padding="10,4" Width="70"  >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}" Offset="0.077"/>
+                            <GradientStop Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}" Offset="0.874"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <TextBlock FontSize="11" FontWeight="Bold" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_theme}},Path=FK_HART_TEXT }" >
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}"/>
+                        </TextBlock.Foreground>
+                    </TextBlock>
+                </Button>
+
+                <Button x:Name="buttonConnect" Style="{StaticResource MaterialDesignRaisedButton}" materialDesign:ButtonAssist.CornerRadius="8" Margin="6 0 0 0" ToolTip="Communicatoin connect" Height="Auto" materialDesign:ShadowAssist.ShadowDepth="Depth5"  BorderThickness="0" VerticalAlignment="Center" 
+                    Click="buttonConnect_Click" Width="70" Padding="10,4" >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}" Offset="0.077"/>
+                            <GradientStop Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}" Offset="0.874"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <TextBlock FontSize="11" FontWeight="Bold" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_theme}},Path=FK_CONNECT_TEXT }" >
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}"/>
+                        </TextBlock.Foreground>
+                    </TextBlock>
+                </Button>
+
+                <Button x:Name="buttonSync" Style="{StaticResource MaterialDesignRaisedButton}" materialDesign:ButtonAssist.CornerRadius="8" Margin="6 0 0 0" ToolTip="Modbus write sync" Height="Auto" materialDesign:ShadowAssist.ShadowDepth="Depth5" BorderThickness="0" VerticalAlignment="Center" Click="buttonSync_Click" Padding="10,4" Width="70"   >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}" Offset="0.077"/>
+                            <GradientStop Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}" Offset="0.874"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <TextBlock FontSize="11" FontWeight="Bold" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_theme}},Path=FK_SYNC_TEXT }">
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}"/>
+                        </TextBlock.Foreground>
+                    </TextBlock>
+                </Button>
+
+                <Button x:Name="buttonExit" Style="{StaticResource MaterialDesignRaisedButton}" materialDesign:ButtonAssist.CornerRadius="8" Margin="6 0 0 0" ToolTip="Exit Program" Height="Auto" materialDesign:ShadowAssist.ShadowDepth="Depth5"  BorderThickness="0" VerticalAlignment="Center" Click="buttonExit_Click" Width="70" Padding="10,4"  >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}" Offset="0.077"/>
+                            <GradientStop Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}" Offset="0.874"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <TextBlock FontSize="11" FontWeight="Bold" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_theme}},Path=FK_EXIT_TEXT }" >
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}"/>
+                        </TextBlock.Foreground>
+                    </TextBlock>
+                </Button>
+            </StackPanel>
+        </Viewbox>
+
+    </Grid>
+</UserControl>

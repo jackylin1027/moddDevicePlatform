@@ -1,0 +1,28 @@
+F:\Ongoing Project\[11]WPF\EPHTransmitter_Software_Tool\LedDigital\bin\Debug\LedDigital.dll
+F:\Ongoing Project\[11]WPF\EPHTransmitter_Software_Tool\LedDigital\bin\Debug\LedDigital.pdb
+F:\Ongoing Project\[11]WPF\EPHTransmitter_Software_Tool\LedDigital\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Ongoing Project\[11]WPF\EPHTransmitter_Software_Tool\LedDigital\obj\Debug\LedDigital_MarkupCompile.cache
+F:\Ongoing Project\[11]WPF\EPHTransmitter_Software_Tool\LedDigital\obj\Debug\LedDigital_MarkupCompile.lref
+F:\Ongoing Project\[11]WPF\EPHTransmitter_Software_Tool\LedDigital\obj\Debug\Themes\Generic.baml
+F:\Ongoing Project\[11]WPF\EPHTransmitter_Software_Tool\LedDigital\obj\Debug\Themes\LedDigital\LedDigital.baml
+F:\Ongoing Project\[11]WPF\EPHTransmitter_Software_Tool\LedDigital\obj\Debug\LedDigital.g.resources
+F:\Ongoing Project\[11]WPF\EPHTransmitter_Software_Tool\LedDigital\obj\Debug\LedDigital.Properties.Resources.resources
+F:\Ongoing Project\[11]WPF\EPHTransmitter_Software_Tool\LedDigital\obj\Debug\LedDigital.csproj.GenerateResource.Cache
+F:\Ongoing Project\[11]WPF\EPHTransmitter_Software_Tool\LedDigital\obj\Debug\LedDigital.dll
+F:\Ongoing Project\[11]WPF\EPHTransmitter_Software_Tool\LedDigital\obj\Debug\LedDigital.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\bin\Debug\LedDigital.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\bin\Debug\LedDigital.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\bin\Debug\Dragablz.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\bin\Debug\Dragablz.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\bin\Debug\Dragablz.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\obj\Debug\LedDigital.csprojResolveAssemblyReference.cache
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\obj\Debug\LedDigital_MarkupCompile.cache
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\obj\Debug\LedDigital_MarkupCompile.lref
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\obj\Debug\Themes\Generic.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\obj\Debug\Themes\LedDigital\LedDigital.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\obj\Debug\LedDigital.g.resources
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\obj\Debug\LedDigital.Properties.Resources.resources
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\obj\Debug\LedDigital.csproj.GenerateResource.Cache
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\obj\Debug\LedDigital.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\EPHTransmitter_Software_Tool - V6\LedDigital\obj\Debug\LedDigital.pdb

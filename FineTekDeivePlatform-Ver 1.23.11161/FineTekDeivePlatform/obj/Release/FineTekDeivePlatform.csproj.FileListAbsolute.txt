@@ -1,0 +1,177 @@
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\FineTekDeivePlatform.csprojResolveAssemblyReference.cache
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\FineTekDeivePlatform.csproj.FineTek Deivce Platform.exe.config
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_advancedchart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_basiclinechart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_button.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_combobox.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_customlabel.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_edit.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_imagebutton.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_labeledit.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_multilabel.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_slider.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_theme.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_theme_fse.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\specialmodel\fk_epht_billboard.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\HistoryChart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\MainWindow.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\RealTimeChart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\View\EphProductView.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\View\LedDigitalView.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\App.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\FineTek Deivce Platform_MarkupCompile.cache
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\FineTek Deivce Platform_MarkupCompile.lref
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\App.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_advancedchart.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_basiclinechart.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_button.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_combobox.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_customlabel.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_edit.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_imagebutton.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_labeledit.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_multilabel.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_slider.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_theme.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\fk_theme_fse.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\component\specialmodel\fk_epht_billboard.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\HistoryChart.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\MainWindow.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\RealTimeChart.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\View\EphProductView.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\View\LedDigitalView.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\FineTek Deivce Platform.g.resources
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\FineTek Deivce Platform.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\FineTek Deivce Platform.exe.config
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\FineTek Deivce Platform.exe
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\FineTek Deivce Platform.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\CommonServiceLocator.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\DateTimePicker.UserControls.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\Dragablz.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\Finetek_FPAS_UtilityTool.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\GalaSoft.MvvmLight.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\GalaSoft.MvvmLight.Extras.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\GalaSoft.MvvmLight.Platform.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\LedDigital.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\LiveCharts.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\LiveCharts.Geared.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\LiveCharts.Wpf.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\MaterialDesignColors.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\MaterialDesignThemes.Wpf.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\MySql.Data.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\System.Windows.Interactivity.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\winform_test.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\DocumentFormat.OpenXml.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\Dragablz.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\Dragablz.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\Finetek_FPAS_UtilityTool.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\GalaSoft.MvvmLight.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\GalaSoft.MvvmLight.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\GalaSoft.MvvmLight.Extras.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\GalaSoft.MvvmLight.Extras.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\GalaSoft.MvvmLight.Platform.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\GalaSoft.MvvmLight.Platform.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\LedDigital.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\LiveCharts.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\LiveCharts.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\LiveCharts.Wpf.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\LiveCharts.Wpf.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\MaterialDesignColors.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\MaterialDesignThemes.Wpf.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\MaterialDesignThemes.Wpf.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\MySql.Data.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\bin\Release\DocumentFormat.OpenXml.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\FineTekDeivePlatform.Properties.Resources.resources
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\FineTekDeivePlatform.csproj.GenerateResource.Cache
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\EPHTransmitter_Software_Tool\obj\Release\FineTek Deivce Platform.exe
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\FineTek Deivce Platform.exe.config
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\FineTek Deivce Platform.exe
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\FineTek Deivce Platform.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\FineTek Deivce Platform.exe
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\FineTek Deivce Platform.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\CommonServiceLocator.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\DateTimePicker.UserControls.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\Dragablz.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\Finetek_FPAS_UtilityTool.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\GalaSoft.MvvmLight.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\GalaSoft.MvvmLight.Extras.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\GalaSoft.MvvmLight.Platform.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\LedDigital.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\LiveCharts.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\LiveCharts.Geared.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\LiveCharts.Wpf.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\MaterialDesignColors.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\MaterialDesignThemes.Wpf.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\MySql.Data.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\System.Windows.Interactivity.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\winform_test.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\DocumentFormat.OpenXml.dll
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\Dragablz.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\Dragablz.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\Finetek_FPAS_UtilityTool.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\GalaSoft.MvvmLight.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\GalaSoft.MvvmLight.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\GalaSoft.MvvmLight.Extras.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\GalaSoft.MvvmLight.Extras.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\GalaSoft.MvvmLight.Platform.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\GalaSoft.MvvmLight.Platform.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\LedDigital.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\LiveCharts.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\LiveCharts.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\LiveCharts.Wpf.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\LiveCharts.Wpf.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\MaterialDesignColors.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\MaterialDesignThemes.Wpf.pdb
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\MaterialDesignThemes.Wpf.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\MySql.Data.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\DocumentFormat.OpenXml.xml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\FineTekDeivePlatform.csprojResolveAssemblyReference.cache
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\FineTekDeivePlatform.csproj.FineTek Deivce Platform.exe.config
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_advancedchart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_basiclinechart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_button.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_combobox.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_customlabel.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_edit.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_imagebutton.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_labeledit.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_multilabel.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_slider.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_theme.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_theme_fse.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\specialmodel\fk_epht_billboard.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\HistoryChart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\MainWindow.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\RealTimeChart.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\View\EphProductView.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\View\LedDigitalView.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\App.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\FineTek Deivce Platform_MarkupCompile.cache
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\FineTek Deivce Platform_MarkupCompile.lref
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\App.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_advancedchart.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_basiclinechart.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_button.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_combobox.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_customlabel.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_edit.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_imagebutton.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_labeledit.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_multilabel.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_slider.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_theme.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\fk_theme_fse.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\component\specialmodel\fk_epht_billboard.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\HistoryChart.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\MainWindow.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\RealTimeChart.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\View\EphProductView.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\View\LedDigitalView.baml
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\FineTek Deivce Platform.g.resources
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\FineTekDeivePlatform.Properties.Resources.resources
+F:\Ongoing Project\[1]FW project\[51]五大變量調試軟體優化案\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\FineTekDeivePlatform.csproj.GenerateResource.Cache
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\bin\Release\FineTek Deivce Platform.exe.config
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\FineTek Deivce Platform.exe
+C:\Users\lin71\Desktop\【FineTek】\【五大變量】\FineTekDeivePlatform-Ver 1.23.11152\FineTekDeivePlatform\obj\Release\FineTek Deivce Platform.pdb

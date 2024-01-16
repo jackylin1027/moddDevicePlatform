@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FineTekModbusDD>
+  <Header>
+    <Form Height="600" Width="1000">
+    </Form>
+    <Identity firmware="A0001" hardware="Unknow" serial="Flow" sensor="EPH0019">
+    </Identity>
+    <Communication interface="rs485">
+    </Communication>
+    <SpecificFunction save_eeprom_addr="4186" load_default_addr="4185" load_firmware_addr="4187">
+    </SpecificFunction>
+  </Header>
+  <UserInterface>
+    <Grid Name="gridMAIN" Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- 這邊開始為兄弟們要寫的程式碼 -->
+        <ScrollViewer Name="scollviewerMAIN" Grid.RowSpan="6" Grid.ColumnSpan="4" VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical"  >
+            <dragablzTabablzControl Name="TabablzControlMAIN">
+                <dragablzTabablzControl.InterTabController>
+                    <dragablzInterTabController></dragablzInterTabController>
+                </dragablzTabablzControl.InterTabController>
+                
+                <TabItem Name="tabitem1ST" Header="主頁面">
+
+                        <StackPanel>
+                            <GroupBox  Header="" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" 
+						        UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="11" BorderThickness="2" Background="{Null}" FontWeight="Bold" >
+                                <Grid>
+                                    <StackPanel Orientation="Horizontal">
+                                    <StackPanel Orientation="Vertical" >
+                                        <StackPanel Orientation="Horizontal" Margin="5">
+                                            <TextBlock  Name="textblockCOM">COMPORT</TextBlock>
+                                            <TextBlock Text=" / "></TextBlock>
+                                            <TextBlock  Name="textblockSERIAL">五大變量</TextBlock>
+                                            <TextBlock  Text=" / "></TextBlock>
+                                            <TextBlock  Name="textblockSENSOR">感測器</TextBlock>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <materialDesignPackIcon Kind="UserEdit" VerticalAlignment="Stretch" />
+                                            <TextBox Name="textboxSENSOR_STATION" TextWrapping="Wrap" FontSize="15" FontWeight="Bold" Foreground="Blue" BorderThickness="0" Margin="10,0,0,0" MaxWidth="160">流量類</TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Vertical">
+                                                <Image Source="style/finetek-EPH0019.png" Stretch="UniformToFill" Height="Auto" Width="120" ></Image>
+                                            </StackPanel>
+
+                                          <GroupBox Header="裝置參數" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" 
+						                        UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="10" BorderThickness="2" MaxHeight="350"  HorizontalAlignment="Stretch">
+ 
+                                                <StackPanel  Name="stackpanelTEST_SETTING_CONTROL" Orientation="Vertical">
+                                                    <StackPanel Name="stackpanelSETTING_CONTROL" Grid.Column="2" VerticalAlignment="Top" Height="50" Orientation="Horizontal"></StackPanel>
+                                                    
+                                                    <TextBlock VerticalAlignment="Center" MinWidth="40">Serial Number</TextBlock>
+                                                    <TextBox Name="editSERIAL_NUMBER" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                                    <TextBlock VerticalAlignment="Center" MinWidth="40">韌體版本</TextBlock>
+                                                    <TextBox Name="editFIRMWARE" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                                    <TextBlock VerticalAlignment="Center" MinWidth="40">MODBUS ID</TextBlock>
+                                                    <TextBox Name="editMODBUS_ID" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                                    <TextBlock VerticalAlignment="Center" MinWidth="40">循環時間</TextBlock>
+                                                    <TextBox Name="editMODBUS_MASTER_DELEYPOLLS" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                                    <TextBlock VerticalAlignment="Center" MinWidth="40">水錶間隔時間</TextBlock>
+                                                    <TextBox Name="editMODBUS_MASTER_SCANRATE" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                                    <TextBlock VerticalAlignment="Center" MinWidth="40">通訊數量</TextBlock>
+                                                    <TextBox Name="editMODBUS_MASTER_MAX_DEVICE_NUM" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                                    <TextBlock VerticalAlignment="Center" MinWidth="40">嘗試連線次數</TextBlock>
+                                                    <TextBox Name="editMODBUS_MASTER_REPLAY_TIMES" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60">fdfd</TextBox>
+                                                </StackPanel>
+                                            </GroupBox>
+                                    </StackPanel>
+                                    
+                                        <StackPanel  Margin="10,0,0,0">
+                                        <StackPanel Name="stackpanelREALTIME_CONTROL"  Orientation="Horizontal" Height="50">
+
+                                        </StackPanel>
+
+                                            <WrapPanel Name="stackpanelMAIN" Orientation="Horizontal" MaxWidth="900">
+                                                <!--  <StackPanel Orientation="Horizontal">
+                                        <TextBlock VerticalAlignment="Center" Width="auto">選擇水表MODBUS ID</TextBlock>
+                                        <ComboBox Name="comboboxSELECT_MODBUS_ID" Margin="5,0,10,0" BorderThickness="1" Width="100" VerticalAlignment="Center" HorizontalContentAlignment="Center"></ComboBox>
+                                    </StackPanel>-->
+                                                <specialmodelfk_epht_billboard Name="ephtbillboardSENSOR_1"></specialmodelfk_epht_billboard>
+
+                                            </WrapPanel>
+
+                                        </StackPanel>
+                                    </StackPanel>
+
+                            </Grid>
+                        </GroupBox>
+                        
+                    </StackPanel>
+                    
+                </TabItem>
+                <TabItem Name="tabitem2RD" Header="歷史資料">
+                    <StackPanel>
+                        <GroupBox Name="groupboxHISTORY" Header="歷史資料" Height="530" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" 
+						     SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="10" BorderThickness="2" >
+
+                        </GroupBox>
+                    </StackPanel>
+
+                </TabItem>
+            </dragablzTabablzControl>
+            <!--      <GroupBox Header="裝置參數" Style="{StaticResource GroupBoxStyleEmpty1}" Margin="5,5,5,0" materialDesignColorZoneAssist.Mode="PrimaryLight" Padding="4,4,4,4" 
+						    UseLayoutRounding="True" SnapsToDevicePixels="True" Foreground="Black" IsHitTestVisible="True" FontSize="10" BorderThickness="2" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Name="stackpanelSETTING_CONTROL" Grid.Column="2" VerticalAlignment="Top" Height="50" Orientation="Horizontal"></StackPanel>
+                    <StackPanel Orientation="Vertical" >
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" Margin="5,0,5,0" MinWidth="80">客戶</TextBlock>
+                                <ComboBox Name="comboboxCUSTOMER" Margin="5,0,10,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center"></ComboBox>
+                            </StackPanel>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" Margin="5,0,5,0" MinWidth="80">年度</TextBlock>
+                                <ComboBox Name="comboboxYEARLY" Margin="5,0,10,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center"></ComboBox>
+                            </StackPanel>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" Margin="5,0,5,0" MinWidth="80">口徑【DN】</TextBlock>
+                                <ComboBox Name="comboboxCALIBER" Margin="5,0,10,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center"></ComboBox>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="100">流水碼</TextBlock>
+                            <TextBox Name="editSERIES_CODE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="100">加密版本</TextBlock>
+                            <ComboBox Name="comboboxENCRYPTION" Margin="5,0,0,5" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="100"></ComboBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Name="buttonDEFAULT" VerticalAlignment="Center" MinWidth="80" Margin="50,0,10,0" Padding="3" Height="24">恢復預設值</Button>
+                            <Button Name="buttonSOFTWARE_RESET" VerticalAlignment="Center" MinWidth="80" Padding="3" Height="24">水錶重開機</Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" MinWidth="100" Foreground="Red" Margin="15,0,0,0"  TextDecorations="Underline">切換通訊後，Modbus將會斷線，參數請確認設定完畢</TextBlock>
+                                <Button Name="buttonCONMMULICATION_MODE" VerticalAlignment="Center" Margin="30,0,0,0"  MinWidth="80" Padding="3" Height="24">切換加密通訊模式</Button>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical" Grid.Column="1" Margin="0,10,0,0" >
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="90" Margin="110,0,0,0">高低速分界CNT</TextBlock>
+                            <TextBox Name="editCALIBRATION_DIVIDE_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q1 K值</TextBlock>
+                            <TextBox Name="editKQ1_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="90" Margin="5,0,0,0">Q1【秒/圈】±0.25</TextBlock>
+                            <TextBox Name="editQ1_1CYCLE_TIME" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q2 K值</TextBlock>
+                            <TextBox Name="editKQ2_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="90" Margin="5,0,0,0">Q2【秒/圈】±0.25</TextBlock>
+                            <TextBox Name="editQ2_1CYCLE_TIME" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q3 K值</TextBlock>
+                            <TextBox Name="editKQ3_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="90" Margin="5,0,0,0">Q3【秒/圈】±0.25</TextBlock>
+                            <TextBox Name="editQ3_1CYCLE_TIME" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q4 K值</TextBlock>
+                            <TextBox Name="editKQ4_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="60" Margin="5,0,0,0">Q4【秒/圈】</TextBlock>
+                            <TextBox Name="editQ4_DELTACNT_LOWER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="10" Margin="5,0,0,0">~</TextBlock>
+                            <TextBox Name="editQ4_DELTACNT_UPPER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q5 K值</TextBlock>
+                            <TextBox Name="editKQ5_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="60" Margin="5,0,0,0">Q5【秒/圈】</TextBlock>
+                            <TextBox Name="editQ5_DELTACNT_LOWER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="10" Margin="5,0,0,0">~</TextBlock>
+                            <TextBox Name="editQ5_DELTACNT_UPPER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q6 K值</TextBlock>
+                            <TextBox Name="editKQ6_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="60" Margin="5,0,0,0">Q6【秒/圈】</TextBlock>
+                            <TextBox Name="editQ6_DELTACNT_LOWER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="10" Margin="5,0,0,0">~</TextBlock>
+                            <TextBox Name="editQ6_DELTACNT_UPPER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" MinWidth="50">Q7 K值</TextBlock>
+                            <TextBox Name="editKQ7_VALUE" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="60" Margin="5,0,0,0">Q7【秒/圈】</TextBlock>
+                            <TextBox Name="editQ7_DELTACNT_LOWER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                            <TextBlock VerticalAlignment="Center" MinWidth="10" Margin="5,0,0,0">~</TextBlock>
+                            <TextBox Name="editQ7_DELTACNT_UPPER" Margin="5,0,0,0" BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="50">fdfd</TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Column="2" >
+                    </StackPanel>
+                </Grid>
+            </GroupBox>-->
+
+        </StackPanel>
+        </ScrollViewer>
+    </Grid>
+  </UserInterface>
+  <UIscript>
+    <ComboboxItemSource Id="comboboxCUSTOMER" Type="string" Items="成品庫存,北水,台水,中華電信,桓達科技" ItemsMapping="0,1,2,3,4">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxYEARLY" Type="string" Items="112,113,114,115,116,117,118,119,120,121,122" ItemsMapping="0,1,2,3,4,5,6,7,8,9,10">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxCALIBER" Type="string" Items="13,20,25,40,50" ItemsMapping="13,20,25,40,50">
+    </ComboboxItemSource>
+    <ComboboxItemSource Id="comboboxENCRYPTION" Type="string" Items="桓達科技,中華電信" ItemsMapping="0,1">
+    </ComboboxItemSource>
+  </UIscript>
+  <exFunction>
+    <!-- event list  cicombobox selectindex_change, tttextbox text_change -->
+    <FuncInfo name="RenewDeviceNumber" response="null" argu="editMODBUS_MASTER_MAX_DEVICE_NUM" event="tt">
+    </FuncInfo>
+  </exFunction>
+  <!--Length 請使用物理單位量, ex Float32 = 1, Float64 = 1, int/uint32 = 1, int/uint16 = 1,-->
+  <CommunicationRoutine>
+    <Sequence Address="5408" Length="94" Attribute="rw">
+    </Sequence>
+    <Sequence Address="4128" Length="40" Attribute="r">
+    </Sequence>
+  </CommunicationRoutine>
+  <ModbusParameter>
+    <Cell RelateName="ephtbillboardSENSOR_1" Address="4128" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_2" Address="4168" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_3" Address="4208" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_4" Address="4248" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_5" Address="4288" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_6" Address="4328" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_7" Address="4368" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_8" Address="4408" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_9" Address="4448" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_10" Address="4488" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_11" Address="4528" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_12" Address="4568" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_13" Address="4608" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_14" Address="4648" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_15" Address="4688" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_16" Address="4728" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_17" Address="4768" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_18" Address="4808" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_19" Address="4848" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_20" Address="4888" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_21" Address="4928" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_22" Address="4968" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_23" Address="5008" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_24" Address="5048" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_25" Address="5088" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_26" Address="5128" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_27" Address="5168" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_28" Address="5208" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_29" Address="5248" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_30" Address="5288" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_31" Address="5328" DataType="EPHT_T" />
+    <Cell RelateName="ephtbillboardSENSOR_32" Address="5368" DataType="EPHT_T" />
+    <Cell RelateName="" Address="5408" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5409" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5410" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5411" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5412" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5413" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5414" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5415" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5416" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5417" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5418" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5419" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5420" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5421" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5422" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5423" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5424" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5425" DataType="INT16" StringLen="73" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="5426" DataType="INT16" StringLen="10" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="5427" DataType="INT16" StringLen="10" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="5428" DataType="INT16" StringLen="10" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="5429" DataType="INT16" StringLen="10" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="5430" DataType="INT16" StringLen="10" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="5431" DataType="INT16" StringLen="10" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="5432" DataType="INT16" StringLen="10" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="5433" DataType="INT16" StringLen="10" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="5434" DataType="INT16" StringLen="10" />
+    <Cell RelateName="editSERIAL_NUMBER" Address="5435" DataType="INT16" StringLen="10" />
+    <Cell RelateName="editFIRMWARE" Address="5436" DataType="INT16" StringLen="6" />
+    <Cell RelateName="editFIRMWARE" Address="5437" DataType="INT16" StringLen="6" />
+    <Cell RelateName="editFIRMWARE" Address="5438" DataType="INT16" StringLen="6" />
+    <Cell RelateName="editFIRMWARE" Address="5439" DataType="INT16" StringLen="6" />
+    <Cell RelateName="editFIRMWARE" Address="5440" DataType="INT16" StringLen="6" />
+    <Cell RelateName="editFIRMWARE" Address="5441" DataType="INT16" StringLen="6" />
+    <Cell RelateName="" Address="5442" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5443" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5444" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5445" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5446" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5447" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5448" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5449" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5450" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5451" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5452" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5453" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5454" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5455" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5456" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5457" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5458" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5459" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5460" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5461" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5462" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5463" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5464" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5465" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5466" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5467" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5468" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5469" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5470" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5471" DataType="INT16" StringLen="73" />
+    <Cell RelateName="editMODBUS_MASTER_DELEYPOLLS" Address="5472" DataType="UINT16" />
+    <Cell RelateName="editMODBUS_MASTER_SCANRATE" Address="5473" DataType="UINT16" />
+    <Cell RelateName="editMODBUS_MASTER_MAX_DEVICE_NUM" Address="5474" DataType="UINT16" />
+    <Cell RelateName="editMODBUS_MASTER_REPLAY_TIMES" Address="5475" DataType="UINT16" />
+    <Cell RelateName="" Address="5476" DataType="UINT16" />
+    <Cell RelateName="" Address="5477" DataType="UINT16" />
+    <Cell RelateName="" Address="5478" DataType="UINT16" />
+    <Cell RelateName="editMODBUS_ID" Address="5479" DataType="UINT16" />
+    <Cell RelateName="" Address="5480" DataType="UINT16" />
+    <Cell RelateName="" Address="5481" DataType="UINT16" />
+    <Cell RelateName="" Address="5482" DataType="UINT16" />
+    <Cell RelateName="" Address="5483" DataType="UINT16" />
+    <Cell RelateName="" Address="5484" DataType="UINT16" />
+    <Cell RelateName="" Address="5485" DataType="UINT16" />
+    <Cell RelateName="" Address="5486" DataType="UINT16" />
+    <Cell RelateName="" Address="5487" DataType="UINT16" />
+    <Cell RelateName="" Address="5488" DataType="UINT16" />
+    <Cell RelateName="" Address="5489" DataType="UINT16" />
+    <Cell RelateName="" Address="5490" DataType="UINT16" />
+    <Cell RelateName="" Address="5491" DataType="UINT16" />
+    <Cell RelateName="" Address="5492" DataType="UINT16" />
+    <Cell RelateName="" Address="5493" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5494" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5495" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5496" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5497" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5498" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5499" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5500" DataType="INT16" StringLen="73" />
+    <Cell RelateName="" Address="5501" DataType="INT16" StringLen="73" />
+  </ModbusParameter>
+  <ChartDefination>
+    <entity RelateName="editTOTAL_ACCUMALUTION" unit="m³">
+    </entity>
+    <interval calculate_targer="modbus_interval" number="2">
+    </interval>
+  </ChartDefination>
+  <SqlRoutine>
+    <displaylitem RelateName="NULL" key="display_value" />
+    <historysqlitem RelateName="ephtbillboardSENSOR_1" key="*" type="EPHT" />
+  <!--  <historysqlitem RelateName="ephtbillboardSENSOR_2" key="*" type="EPHT" />
+    <historysqlitem RelateName="ephtbillboardSENSOR_3" key="*" type="EPHT" />-->
+  </SqlRoutine>
+</FineTekModbusDD>

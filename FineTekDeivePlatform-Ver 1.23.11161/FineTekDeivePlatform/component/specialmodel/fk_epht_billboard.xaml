@@ -1,0 +1,100 @@
+﻿<UserControl x:Class="FineTekDeivePlatform.component.specialmodel.fk_epht_billboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FineTekDeivePlatform.component.specialmodel"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="500">
+    <Grid>
+        <Expander BorderBrush="LightGray" BorderThickness="2" >
+            <Expander.Header >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="錶號:" Margin="0,0,0,0" FontSize="13" Foreground="Black" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Name="textblockMETER_ID"  Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_epht_billboard}}, Path=PFC_METER_ID}" Margin="5,0,0,0" FontSize="13" Foreground="Black" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Text="積算值:" Margin="30,0,0,0" FontSize="18" Foreground="Black" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Name="textblockMETER_VOLUME"  FontSize="18" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:fk_epht_billboard}}, Path=PFC_METER_VOLUMN}" Margin="5,0,0,0"  Foreground="Black" ></TextBlock>
+                </StackPanel>
+            </Expander.Header>
+
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Margin="10,0,0,5">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Name="textbolockMETER_USER_NUMBER"  VerticalAlignment="Center" Width="70">用戶水號</TextBlock>
+                        <TextBox Name="editMETER_USER_NUMBER" Text="{Binding ElementName=textblockMETER_ID, Path=Text}" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">水錶器號</TextBlock>
+                        <TextBox Name="editMETER_ID" Margin="5,0,0,0" Text="{Binding ElementName=textblockMETER_ID, Path=Text}"   BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">韌體版本</TextBlock>
+                        <TextBox Name="editMETER_FIRMWARE_VERSION" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">口徑</TextBlock>
+                        <TextBox Name="editMETER_CALIBER" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">電池電壓</TextBlock>
+                        <TextBox Name="editMETER_BATTERY_VOLTAGE" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">總積算值</TextBlock>
+                        <TextBox Name="editMETER_VOLUME" Margin="5,0,0,0" Text="{Binding ElementName=textblockMETER_VOLUME, Path=Text}"   BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">瞬間值</TextBlock>
+                        <TextBox Name="editMETER_FLOW_RATE" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">正積算值</TextBlock>
+                        <TextBox Name="editMETER_PLUS_TOTALFLOW" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">反積算值</TextBlock>
+                        <TextBox Name="editMETER_MINUS_TOTALFLOW" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Margin="10,0,0,5">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">更新時間</TextBlock>
+                        <TextBox Name="editMETER_REFLASH_TIME" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">漏水天數</TextBlock>
+                        <TextBox Name="editMETER_LDAY" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">正轉天數</TextBlock>
+                        <TextBox Name="editMETER_NDAY" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">靜止天數</TextBlock>
+                        <TextBox Name="editMETER_ODAY" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">反轉天數</TextBlock>
+                        <TextBox Name="editMETER_UDAY" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">受磁天數</TextBlock>
+                        <TextBox Name="editMETER_HDAY" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">電量不足天數</TextBlock>
+                        <TextBox Name="editMETER_BDAY" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">開關次數</TextBlock>
+                        <TextBox Name="editMETER_USER_COUNT" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Width="{Binding ElementName=textbolockMETER_USER_NUMBER, Path=Width}">狀態旗標</TextBlock>
+                        <TextBox Name="editMETER_STATUS" Margin="5,0,0,0"  BorderThickness="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="60"></TextBox>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Expander>
+    </Grid>
+</UserControl>
